@@ -1,23 +1,9 @@
+@import '../scss/shared/variables';
+@import '../scss/header';
+@import '../scss/footer';
+@import '../scss/main-container';
+@import url(https://fonts.googleapis.com/css?family=Mulish);
+
 body{
-    background-color: #262626;
-}
-
-.upper-header {
-    position: sticky;
-    width: 100%;
-    top: 0;
-    height: 100px;
-    object-fit: scale-down;
-}
-.main-container{
-    display: flex;
-    padding-left: 2em;
-    padding-right: 2em;
-}
-.main-container__pinned-section__wrap{
-    padding: 2em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+background-color: $background-color;
 }

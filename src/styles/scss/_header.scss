@@ -1,0 +1,49 @@
+.upper-header {
+    position: fixed;
+    background-color: $header-color;
+    box-shadow: 0 2px black;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 60px;
+    &__button {
+        height: 31px;
+        width: 95px;
+        position: absolute;
+        cursor: pointer;
+        right: 20px;
+        top: 14px;
+        box-shadow: 0 2px rgb(111, 154, 55);
+        border-radius: 4px;    
+        background-color: rgb(130, 180, 64);
+        text-align: center;
+        &:hover{
+            background-color: rgb(111, 154, 55) ;
+            box-shadow: 0 2px rgb(64, 89, 32);
+        }
+        &:active{
+            transform:translateY(2px);
+        }
+        &__link {
+            position: relative;
+            top: 6px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-decoration-line: none;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+    }
+    &__logo{
+        position: relative;
+        padding-top: 20px;
+        padding-left: 20px;
+        align-self: center;
+        max-width: 152px;
+        max-height: 18px;
+
+    }
+}
+
+
