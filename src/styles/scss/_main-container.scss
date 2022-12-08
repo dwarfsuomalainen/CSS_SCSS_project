@@ -213,14 +213,14 @@
                     display: flex;
                     width: 1204px;
                     height: 400px;
-                    background: url(/src/img/big_cards_imgs/perfect_place.jpeg);
+                    background: url(../../img/big_cards_imgs/perfect_place.jpeg);
                     background-size: cover;
                     background-position: center;
                     position: relative;
                     overflow: hidden;
                     margin-bottom: 40px;
                     &:hover{
-                        scale: 1.1;
+                        scale: (1.1);
                         background-size: 105%;
     
                     }
@@ -230,7 +230,7 @@
                     display: flex;
                     width: 1204px;
                     height: 608px;
-                    background: url(/src/img/big_cards_imgs/i_work_best.jpeg);
+                    background: url(../../img/big_cards_imgs/i_work_best.jpeg);
                     background-size: cover;
                     background-position: center;
                     position: relative;
@@ -246,7 +246,7 @@
                     display: flex;
                     width: 1204px;
                     height: 536px;
-                    background: url(/src/img/big_cards_imgs/the_perfect_place.jpeg);
+                    background: url(../../img/big_cards_imgs/the_perfect_place.jpeg);
                     background-size: cover;
                     background-position: center;
                     position: relative;
