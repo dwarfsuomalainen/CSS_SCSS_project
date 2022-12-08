@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Mulish);
+@import url(https://fonts.googleapis.com/css?family=Corben);
 .upper-header {
   position: fixed;
   background-color: #262626;
@@ -57,12 +58,18 @@
   padding-left: 3em;
   padding-right: 3em;
 }
+.main-container__header {
+  display: block;
+}
 .main-container__header__wrap {
   z-index: 100;
   position: relative;
   padding-top: 60px;
   display: flex;
   justify-content: space-between;
+  padding-left: 9em;
+  width: 1203px;
+  height: 35px;
 }
 .main-container__header__wrap__logo {
   display: flex;
@@ -71,24 +78,48 @@
   width: 127px;
 }
 .main-container__header__wrap__navbar {
-  display: flex;
   position: relative;
-  justify-content: space-between;
 }
-.main-container__header__wrap__navbar__item,
-.main-container__header__wrap__navbar a {
-  font-family: Mulish, sans-serif;
-  display: flex inline;
-  color: rgb(235, 235, 235);
+.main-container__header__wrap__navbar ul {
+  overflow: hidden;
+  list-style: none;
+}
+.main-container__header__wrap__navbar li :hover:before {
+  content: "";
+  position: absolute;
+  position: absolute;
+  top: -16px;
+  background: grey;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  left: calc(51% - 1px);
+}
+.main-container__header__wrap__navbar li {
+  float: left;
+  list-style: none;
+}
+.main-container__header__wrap__navbar li a {
+  display: block;
+  padding-left: 16px;
+  text-align: center;
   text-decoration: none;
   text-decoration-line: none;
-  font-size: 14px;
+  font-size: 16px;
+  font-family: Mulish, sans-serif;
   font-weight: 800;
-  height: 21px;
-  padding-left: 8px;
+  color: rgb(235, 235, 235);
 }
-.main-container__header__wrap__navbar li :hover {
+.main-container__header__wrap__navbar li a:hover {
   color: aqua;
+}
+.main-container__header__wrap__navbar span {
+  padding-left: 16px;
+  display: flex;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  fill: rgb(235, 235, 235);
 }
 .main-container__pinned-section {
   margin-top: 10px;
@@ -118,6 +149,7 @@
 }
 .main-container__pinned-section__wrap__pinned-element__content__pill-button {
   background-color: antiquewhite;
+  margin: 10px 14px;
   padding: 5px 10px;
   width: fit-content;
   font-family: Mulish, sans-serif;
@@ -127,15 +159,34 @@
   letter-spacing: 2px;
   border-radius: 16px;
 }
+.main-container__pinned-section__wrap__pinned-element__content__link-to-author {
+  font-size: 14px;
+  font-family: Mulish, sans-serif;
+  padding-left: 14px;
+  color: beige;
+}
+.main-container__pinned-section__wrap__pinned-element__content__pinned-title {
+  font-family: Corben, serif;
+  padding-left: 14px;
+  color: beige;
+  height: 40px;
+}
 .main-container__pinned-section__wrap__pinned-element:nth-child(1) {
   grid-area: a1;
   width: 516px;
-  height: 321px;
-  padding: 70px 30px 25px 30px;
-  background: url("../../img/pinned/one_space.jpeg");
+  height: 371px;
+  padding: 20px 30px 25px 30px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/pinned/one_space.jpeg");
   background-size: cover;
   position: relative;
   overflow: hidden;
+}
+.main-container__pinned-section__wrap__pinned-element:nth-child(1) .main-container__pinned-section__wrap__pinned-element__content__link-to-author {
+  padding-top: 150px;
+  margin: 0;
+}
+.main-container__pinned-section__wrap__pinned-element:nth-child(1) .main-container__pinned-section__wrap__pinned-element__content__pinned-title {
+  margin: 0;
 }
 .main-container__pinned-section__wrap__pinned-element:nth-child(1):hover {
   transform: translateY(-4px);
@@ -143,12 +194,22 @@
 .main-container__pinned-section__wrap__pinned-element:nth-child(2) {
   grid-area: a2;
   width: 348px;
-  height: 105px;
-  padding: 70px 30px 25px 30px;
-  background: url(../../img/pinned/open_space_for_more.jpeg);
+  height: 155px;
+  padding: 20px 30px 25px 30px;
+  background: linear-gradient(rgba(25, 6, 237, 0.8), rgba(25, 6, 237, 0.8)), url(../../img/pinned/open_space_for_more.jpeg);
   background-size: cover;
   position: relative;
   overflow: hidden;
+}
+.main-container__pinned-section__wrap__pinned-element:nth-child(2) .main-container__pinned-section__wrap__pinned-element__content__link-to-author {
+  padding-top: 40px;
+  margin: 0;
+  color: rgb(229, 223, 223);
+}
+.main-container__pinned-section__wrap__pinned-element:nth-child(2) .main-container__pinned-section__wrap__pinned-element__content__pinned-title {
+  padding-bottom: 40px;
+  font-size: 19px;
+  color: rgb(229, 223, 223);
 }
 .main-container__pinned-section__wrap__pinned-element:nth-child(2):hover {
   transform: translateY(-4px);
@@ -156,12 +217,22 @@
 .main-container__pinned-section__wrap__pinned-element:nth-child(3) {
   grid-area: a3;
   width: 348px;
-  height: 105px;
-  padding: 70px 30px 25px 30px;
+  height: 155px;
+  padding: 20px 30px 25px 30px;
   background-color: #ffb469;
   background-size: cover;
   position: relative;
   overflow: hidden;
+}
+.main-container__pinned-section__wrap__pinned-element:nth-child(3) .main-container__pinned-section__wrap__pinned-element__content__link-to-author {
+  padding-top: 40px;
+  margin: 0;
+  color: rgb(68, 67, 67);
+}
+.main-container__pinned-section__wrap__pinned-element:nth-child(3) .main-container__pinned-section__wrap__pinned-element__content__pinned-title {
+  padding-bottom: 40px;
+  font-size: 19px;
+  color: rgb(68, 67, 67);
 }
 .main-container__pinned-section__wrap__pinned-element:nth-child(3):hover {
   transform: translateY(-4px);
@@ -169,12 +240,22 @@
 .main-container__pinned-section__wrap__pinned-element:nth-child(4) {
   grid-area: a4;
   width: 348px;
-  height: 105px;
-  padding: 70px 30px 25px 30px;
-  background: url(../../img/pinned/space_for_mind.jpeg);
+  height: 155px;
+  padding: 20px 30px 25px 30px;
+  background: linear-gradient(rgba(237, 6, 202, 0.8), rgba(237, 6, 202, 0.8)), url(../../img/pinned/space_for_mind.jpeg);
   background-size: cover;
   position: relative;
   overflow: hidden;
+}
+.main-container__pinned-section__wrap__pinned-element:nth-child(4) .main-container__pinned-section__wrap__pinned-element__content__link-to-author {
+  padding-top: 40px;
+  margin: 0;
+  color: rgb(229, 223, 223);
+}
+.main-container__pinned-section__wrap__pinned-element:nth-child(4) .main-container__pinned-section__wrap__pinned-element__content__pinned-title {
+  padding-bottom: 40px;
+  font-size: 19px;
+  color: rgb(229, 223, 223);
 }
 .main-container__pinned-section__wrap__pinned-element:nth-child(4):hover {
   transform: translateY(-4px);
@@ -182,12 +263,22 @@
 .main-container__pinned-section__wrap__pinned-element:nth-child(5) {
   grid-area: a5;
   width: 348px;
-  height: 105px;
-  padding: 70px 30px 25px 30px;
-  background: url(../../img/pinned/sea_is_calm.jpeg);
+  height: 155px;
+  padding: 20px 30px 25px 30px;
+  background: linear-gradient(rgba(255, 192, 203, 0.8), rgba(255, 192, 203, 0.8)), url(../../img/pinned/sea_is_calm.jpeg);
   background-size: cover;
   position: relative;
   overflow: hidden;
+}
+.main-container__pinned-section__wrap__pinned-element:nth-child(5) .main-container__pinned-section__wrap__pinned-element__content__link-to-author {
+  padding-top: 40px;
+  margin: 0;
+  color: rgb(68, 67, 67);
+}
+.main-container__pinned-section__wrap__pinned-element:nth-child(5) .main-container__pinned-section__wrap__pinned-element__content__pinned-title {
+  padding-bottom: 0px;
+  font-size: 19px;
+  color: rgb(68, 67, 67);
 }
 .main-container__pinned-section__wrap__pinned-element:nth-child(5):hover {
   transform: translateY(-4px);

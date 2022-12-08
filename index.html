@@ -6,61 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles/css/styles.css" />
     <link rel="stylesheet" href="" />
-    <title>CSS/SASS , Grid , Flexbox Assignment.</title>
+    <title>CSS/SASS -- Grid -- Flexbox Assignment.</title>
   </head>
-  <div class="upper-header">
-    <div class="upper-header__logo">
-      <img src="./src/img/envato-market-logo.svg" alt="envato-market-logo" />
-    </div>
-    <div class="upper-header__button">
-      <a class="upper-header__button__link" href="/">Buy now</a>
-    </div>
-  </div>
+
   <body>
+    <div class="upper-header">
+      <div class="upper-header__logo">
+        <img src="./src/img/envato-market-logo.svg" alt="envato-market-logo" />
+      </div>
+      <div class="upper-header__button">
+        <a class="upper-header__button__link" href="/">Buy now</a>
+      </div>
+    </div>
     <div class="main-container">
       <header class="main-container__header">
+        <div></div>
         <div class="main-container__header__wrap">
           <div class="main-container__header__wrap__logo">
             <img src="./src/img/maido.svg" alt="maido" />
           </div>
           <div class="main-container__header__wrap__navbar">
-            <nav>
-              <ul>
-                <li class="main-container__header__wrap__navbar__item">
-                  <a href="https://maido-dark.fueko.net/" class="is-active"
-                    >Home</a
-                  >
-                </li>
-                <li class="main-container__header__wrap__navbar__item">
-                  <a href="https://maido-dark.fueko.net/features/">Features</a>
-                </li>
-                <li class="main-container__header__wrap__navbar__item">
-                  <a href="https://maido-dark.fueko.net/style-guide/"
-                    >Style Guide</a
-                  >
-                </li>
-                <li class="main-container__header__wrap__navbar__item">
-                  <a href="https://maido-dark.fueko.net/contact/">Contact</a>
-                </li>
-                <li class="main-container__header__wrap__navbar__item">
-                  <a href="https://maido-dark.fueko.net/newsletter/"
-                    >Newsletter</a
-                  >
-                </li>
-                <li class="main-container__header__wrap__navbar__item">
-                  <a href="https://maido.fueko.net/demos/">Demos</a>
-                </li>
-                <li class="main-container__header__wrap__navbar__item">
-                  <a
-                    href="https://themeforest.net/item/maido-multipurpose-ghost-blog-theme/24837109"
-                    >Get Theme</a
-                  >
-                </li>
-                <li
-                  id="search-open"
-                  class="main-container__header__wrap__navbar__item"
+            <ul>
+              <li class="main-container__header__wrap__navbar__item">
+                <a href="https://maido-dark.fueko.net/" class="is-active"
+                  >Home</a
                 >
-                  <span>Search</span
+              </li>
+              <li class="main-container__header__wrap__navbar__item">
+                <a href="https://maido-dark.fueko.net/features/">Features</a>
+              </li>
+              <li class="main-container__header__wrap__navbar__item">
+                <a href="https://maido-dark.fueko.net/style-guide/"
+                  >Style Guide</a
+                >
+              </li>
+              <li class="main-container__header__wrap__navbar__item">
+                <a href="https://maido-dark.fueko.net/contact/">Contact</a>
+              </li>
+              <li class="main-container__header__wrap__navbar__item">
+                <a href="https://maido-dark.fueko.net/newsletter/"
+                  >Newsletter</a
+                >
+              </li>
+              <li class="main-container__header__wrap__navbar__item">
+                <a href="https://maido.fueko.net/demos/">Demos</a>
+              </li>
+              <li class="main-container__header__wrap__navbar__item">
+                <a
+                  href="https://themeforest.net/item/maido-multipurpose-ghost-blog-theme/24837109"
+                  >Get Theme</a
+                >
+              </li>
+              <li
+                id="search-open"
+                class="main-container__header__wrap__navbar__item"
+              >
+                <span
                   ><svg
                     class="global-svg"
                     role="img"
@@ -69,11 +70,10 @@
                   >
                     <path
                       d="M19.063 16.384l4.325 4.323c.391.392.63.924.611 1.475-.032.926-.646 1.649-1.68 1.736-.551.046-1.086-.22-1.476-.61l-4.325-4.325c-1.706 1.131-4.034 1.895-6.08 1.893C4.673 20.875 0 16.202 0 10.438 0 4.673 4.673 0 10.438 0c5.764 0 10.437 4.673 10.437 10.438 0 2.127-.718 4.294-1.812 5.945v.001zm-8.625 1.032c3.839 0 6.997-3.161 6.997-7 0-3.84-3.16-7-6.999-7-3.84 0-7.001 3.16-7.001 7 0 3.839 3.161 6.998 7.001 6.998l.002.002z"
-                    ></path>
-                  </svg>
-                </li>
-              </ul>
-            </nav>
+                    ></path></svg
+                ></span>
+              </li>
+            </ul>
           </div>
         </div>
       </header>
@@ -97,7 +97,7 @@
               <h3
                 class="main-container__pinned-section__wrap__pinned-element__content__pinned-title"
               >
-                One space, so many possibilities
+                One space, so many <br> possibilities
               </h3>
               <!--<div>
               <img
@@ -115,13 +115,13 @@
               Pinned
             </div>
             <div
-              class="main-container__pinned-section__wrap__pinned-element__link-to-author"
+              class="main-container__pinned-section__wrap__pinned-element__content__link-to-author"
             >
-              by <a href="/"></a>
+              by Janet Robertson <a href="#"></a>
               <!-- in the example here is a link to / -->
             </div>
             <h3
-              class="main-container__pinned-section__wrap__pinned-element__pinned-title"
+            class="main-container__pinned-section__wrap__pinned-element__content__pinned-title"
             >
               Make the open space open to more
             </h3>
@@ -140,13 +140,13 @@
               Pinned
             </div>
             <div
-              class="main-container__pinned-section__wrap__pinned-element__link-to-author"
+              class="main-container__pinned-section__wrap__pinned-element__content__link-to-author"
             >
-              " by " <a href="/"></a>
+              by James Bryant and other authors <a href="/"></a>
               <!-- in the example here is a link to / -->
             </div>
             <h3
-              class="main-container__pinned-section__wrap__pinned-element__pinned-title"
+            class="main-container__pinned-section__wrap__pinned-element__content__pinned-title"
             >
               An open space for open mind
             </h3>
@@ -158,14 +158,13 @@
               Pinned
             </div>
             <div
-              class="main-container__pinned-section__wrap__pinned-element__link-to-author"
+            class="main-container__pinned-section__wrap__pinned-element__content__link-to-author"
             >
-              " by " <a href="/"></a>
-              " and other authors "
+            by Patricia Jenkins and othe authors <a href="/"></a>
               <!-- in the example here is a link to / -->
             </div>
             <h3
-              class="main-container__pinned-section__wrap__pinned-element__pinned-title"
+            class="main-container__pinned-section__wrap__pinned-element__content__pinned-title"
             >
               A comfortable spot for everyone
             </h3>
@@ -185,16 +184,15 @@
               Pinned
             </div>
             <div
-              class="main-container__pinned-section__wrap__pinned-element__link-to-author"
+              class="main-container__pinned-section__wrap__pinned-element__content__link-to-author"
             >
-              " by " <a href="/"></a>
-              " and other authors "
+            by Margareth Robertson <a href="#"></a>
               <!-- in the example here is a link to / -->
             </div>
             <h3
-              class="main-container__pinned-section__wrap__pinned-element__pinned-title"
+            class="main-container__pinned-section__wrap__pinned-element__content__pinned-title"
             >
-              Anyone can hold the helm when the sea is calm
+              Anyone can hold the<br>helm when the sea is calm
             </h3>
             <div>
               <!--<img
@@ -332,7 +330,9 @@
       <div class="main-container__global__grid">
         <div class="main-container__global__grid-cards">
           <div class="main-container__global__grid-cards__grid-card">
-            <div class="main-container__global__grid-cards__grid-card__pill-button">
+            <div
+              class="main-container__global__grid-cards__grid-card__pill-button"
+            >
               CREATIVE
             </div>
             <h2 class="main-container__global__grid-cards__grid-card__title">
@@ -358,13 +358,19 @@
           </div>
 
           <div class="main-container__global__grid-card">
-            <div class="main-container__global__grid-cards__grid-card__pill-button">
+            <div
+              class="main-container__global__grid-cards__grid-card__pill-button"
+            >
               CASE STUDY
             </div>
-            <div class="main-container__global__grid-cards__grid-card__pill-button">
+            <div
+              class="main-container__global__grid-cards__grid-card__pill-button"
+            >
               CREATIVE
             </div>
-            <div class="main-container__global__grid-cards__grid-card__pill-button">
+            <div
+              class="main-container__global__grid-cards__grid-card__pill-button"
+            >
               OPEN SPACE
             </div>
             <h2 class="main-container__global__grid-cards__grid-card__title">
@@ -388,8 +394,16 @@
           </div>
 
           <div class="main-container__global__grid-cards__grid-card">
-            <div class="main-container__global__grid-cards__grid-card__pill-button">CREATIVE</div>
-            <div class="main-container__global__grid-cards__grid-card__pill-button">FURNITURE</div>
+            <div
+              class="main-container__global__grid-cards__grid-card__pill-button"
+            >
+              CREATIVE
+            </div>
+            <div
+              class="main-container__global__grid-cards__grid-card__pill-button"
+            >
+              FURNITURE
+            </div>
             <h2 class="main-container__global__grid-cards__grid-card__title">
               <a href="/">Being unique is better than being perfect</a>
             </h2>
@@ -413,8 +427,16 @@
           </div>
 
           <div class="main-container__global__grid-cards__grid-card">
-            <div class="main-container__global__grid-cards__grid-card__pill-button">CASE STUDY</div>
-            <div class="main-container__global__grid-cards__grid-card__pill-button">OPEN SPACE</div>
+            <div
+              class="main-container__global__grid-cards__grid-card__pill-button"
+            >
+              CASE STUDY
+            </div>
+            <div
+              class="main-container__global__grid-cards__grid-card__pill-button"
+            >
+              OPEN SPACE
+            </div>
             <h2 class="main-container__global__grid-cards__grid-card__title">
               <a href="/">Anyone can hold the helm when the sea is calm</a>
             </h2>
@@ -433,8 +455,16 @@
             </div>
           </div>
           <div class="main-container__global__grid-cards__grid-card">
-            <div class="main-container__global__grid-cards__grid-card__pill-button">PRODUCTIVITY</div>
-            <div class="main-container__global__grid-cards__grid-card__pill-button">OPEN SPACE</div>
+            <div
+              class="main-container__global__grid-cards__grid-card__pill-button"
+            >
+              PRODUCTIVITY
+            </div>
+            <div
+              class="main-container__global__grid-cards__grid-card__pill-button"
+            >
+              OPEN SPACE
+            </div>
             <h2 class="main-container__global__grid-cards__grid-card__title">
               <a href="/">Change is always happening</a>
             </h2>
@@ -457,7 +487,9 @@
       </div>
       <div class="main-container__global__button-more">LOAD MORE</div>
       <div class="main-container__global__form">
-        <h2 class="main-container__global__grid-cards__grid-card__title">Subscribe to see what we're thinking</h2>
+        <h2 class="main-container__global__grid-cards__grid-card__title">
+          Subscribe to see what we're thinking
+        </h2>
         <span>Start your day with Maido</span>
         <input
           class="form__input"

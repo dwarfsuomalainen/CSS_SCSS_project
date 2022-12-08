@@ -4,7 +4,7 @@
     padding-right: 3em;
 
     &__header {
-        
+        display: block;
 
         &__wrap {
             z-index: 100;
@@ -12,6 +12,10 @@
             padding-top: 60px;
             display: flex;
             justify-content: space-between;
+            padding-left: 9em;
+            width: 1203px;
+            height: 35px;
+
 
             &__logo {
                 display: flex;
@@ -21,31 +25,58 @@
             }
 
             &__navbar {
-                display: flex;
                 position: relative;
-                justify-content: space-between;
 
+                ul {
+                    overflow: hidden;
+                    list-style: none;
+                }
 
-                &__item,
-                a {
-                    font-family: Mulish, sans-serif;
-                    display: flex inline;
-                    color: rgb(235, 235, 235);
+                li :hover:before {
+                    content: "";
+                    position: absolute;
+                    position: absolute;
+                    top: -16px;
+                    background: grey;
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 100%;
+                    left: calc(51% - 1px);
+
+                }
+
+                li {
+                    float: left;
+                    list-style: none;
+                }
+
+                li a {
+
+                    display: block;
+                    padding-left: 16px;
+                    text-align: center;
                     text-decoration: none;
                     text-decoration-line: none;
-                    font-size: 14px;
+                    font-size: 16px;
+                    font-family: Mulish, sans-serif;
                     font-weight: 800;
-                    height: 21px;
-                    padding-left: 8px;
-
-
+                    color: rgb(235, 235, 235);
                 }
 
-                li :hover {
+                li a:hover {
                     color: aqua;
+                }
 
+                span {
+                    padding-left: 16px;
+                    display: flex;
+                    position: relative;
+                    width: 20px;
+                    height: 20px;
+                    fill: rgb(235, 235, 235);
                 }
             }
+
 
         }
     }
@@ -83,6 +114,8 @@
 
                     &__pill-button {
                         background-color: antiquewhite;
+                        margin: 10px 14px;
+
                         padding: 5px 10px;
                         width: fit-content;
                         font-family: Mulish, sans-serif;
@@ -93,9 +126,20 @@
                         border-radius: 16px;
                     }
 
-                    &__link-to-author {}
+                    &__link-to-author {
+                        font-size: 14px;
+                        font-family: Mulish, sans-serif;
+                        padding-left: 14px;
+                        color: beige;
+                    }
 
-                    &__pinned-title {}
+                   &__pinned-title {
+                        font-family: Corben, serif;
+                       // font-size: 29px;
+                        padding-left: 14px;
+                        color: beige;
+                        height: 40px;
+                    }
 
                 }
             }
@@ -103,12 +147,21 @@
             &__pinned-element:nth-child(1) {
                 grid-area: a1;
                 width: 516px;
-                height: 321px;
-                padding: 70px 30px 25px 30px;
-                background: url("../../img/pinned/one_space.jpeg");
+                height: 371px;
+                padding: 20px 30px 25px 30px;
+                background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) ,url("../../img/pinned/one_space.jpeg");
                 background-size: cover;
                 position: relative;
                 overflow: hidden;
+
+                .main-container__pinned-section__wrap__pinned-element__content__link-to-author {
+                    padding-top: 150px;
+                    margin: 0;
+                }
+
+                .main-container__pinned-section__wrap__pinned-element__content__pinned-title {
+                    margin: 0;
+                }
 
                 &:hover {
                     transform: translateY(-4px);
@@ -118,12 +171,23 @@
             &__pinned-element:nth-child(2) {
                 grid-area: a2;
                 width: 348px;
-                height: 105px;
-                padding: 70px 30px 25px 30px;
-                background: url(../../img/pinned/open_space_for_more.jpeg);
+                height: 155px;
+                padding: 20px 30px 25px 30px;
+                background: linear-gradient(rgba(25, 6, 237, 0.8), rgba(25, 6, 237,0.8)) ,url(../../img/pinned/open_space_for_more.jpeg);
                 background-size: cover;
                 position: relative;
                 overflow: hidden;
+                .main-container__pinned-section__wrap__pinned-element__content__link-to-author {
+                    padding-top: 40px;
+                    margin: 0;
+                    color: rgb(229, 223, 223)
+                }
+
+                .main-container__pinned-section__wrap__pinned-element__content__pinned-title {
+                    padding-bottom: 40px;
+                    font-size: 19px;
+                    color: rgb(229, 223, 223)
+                }
 
                 &:hover {
                     transform: translateY(-4px);
@@ -133,13 +197,23 @@
             &__pinned-element:nth-child(3) {
                 grid-area: a3;
                 width: 348px;
-                height: 105px;
-                padding: 70px 30px 25px 30px;
+                height: 155px;
+                padding: 20px 30px 25px 30px;
                 background-color: #ffb469;
                 background-size: cover;
                 position: relative;
                 overflow: hidden;
+                .main-container__pinned-section__wrap__pinned-element__content__link-to-author {
+                    padding-top: 40px;
+                    margin: 0;
+                    color: rgb(68, 67, 67)
+                }
 
+                .main-container__pinned-section__wrap__pinned-element__content__pinned-title {
+                    padding-bottom: 40px;
+                    font-size: 19px;
+                    color: rgb(68, 67, 67)
+                }
                 &:hover {
                     transform: translateY(-4px);
                 }
@@ -149,13 +223,23 @@
             &__pinned-element:nth-child(4) {
                 grid-area: a4;
                 width: 348px;
-                height: 105px;
-                padding: 70px 30px 25px 30px;
-                background: url(../../img/pinned/space_for_mind.jpeg);
+                height: 155px;
+                padding: 20px 30px 25px 30px;
+                background: linear-gradient(rgba(237, 6, 202, 0.8), rgba(237, 6, 202, 0.8)) ,url(../../img/pinned/space_for_mind.jpeg);
                 background-size: cover;
                 position: relative;
                 overflow: hidden;
+                .main-container__pinned-section__wrap__pinned-element__content__link-to-author {
+                    padding-top: 40px;
+                    margin: 0;
+                    color: rgb(229, 223, 223)
+                }
 
+                .main-container__pinned-section__wrap__pinned-element__content__pinned-title {
+                    padding-bottom: 40px;
+                    font-size: 19px;
+                    color: rgb(229, 223, 223)
+                }
                 &:hover {
                     transform: translateY(-4px);
                 }
@@ -164,13 +248,23 @@
             &__pinned-element:nth-child(5) {
                 grid-area: a5;
                 width: 348px;
-                height: 105px;
-                padding: 70px 30px 25px 30px;
-                background: url(../../img/pinned/sea_is_calm.jpeg);
+                height: 155px;
+                padding: 20px 30px 25px 30px;
+                background: linear-gradient(rgba(255, 192, 203, 0.8), rgba(255, 192, 203, 0.8)) ,url(../../img/pinned/sea_is_calm.jpeg);
                 background-size: cover;
                 position: relative;
                 overflow: hidden;
+                .main-container__pinned-section__wrap__pinned-element__content__link-to-author {
+                    padding-top: 40px;
+                    margin: 0;
+                    color: rgb(68, 67, 67)
+                }
 
+                .main-container__pinned-section__wrap__pinned-element__content__pinned-title {
+                    padding-bottom: 0px;
+                    font-size: 19px;
+                    color: rgb(68, 67, 67)
+                }
                 &:hover {
                     transform: translateY(-4px);
                 }
@@ -186,7 +280,7 @@
         flex-direction: column;
         align-items: center;
 
-        &__big-cards{
+        &__big-cards {
             position: relative;
             cursor: pointer;
             border-radius: 16px;
@@ -194,7 +288,7 @@
             display: flex;
             flex-direction: column;
 
-            &__big-card{
+            &__big-card {
                 position: relative;
                 cursor: pointer;
                 border-radius: 16px;
@@ -203,7 +297,7 @@
                 flex-direction: column;
                 align-items: center;
 
-                & svg{
+                & svg {
                     width: 40px;
                     height: 40px;
                 }
@@ -219,13 +313,15 @@
                     position: relative;
                     overflow: hidden;
                     margin-bottom: 40px;
-                    &:hover{
+
+                    &:hover {
                         scale: (1.1);
                         background-size: 105%;
-    
+
                     }
 
                 }
+
                 &:nth-child(2) {
                     display: flex;
                     width: 1204px;
@@ -236,12 +332,14 @@
                     position: relative;
                     overflow: hidden;
                     margin-bottom: 40px;
-                    &:hover{
+
+                    &:hover {
                         background-size: 105%;
-    
+
                     }
-    
+
                 }
+
                 &:nth-child(3) {
                     display: flex;
                     width: 1204px;
@@ -252,17 +350,18 @@
                     position: relative;
                     overflow: hidden;
                     margin-bottom: 40px;
-                    &:hover{
+
+                    &:hover {
                         background-size: 105%;
-    
+
                     }
                 }
             }
- 
+
         }
 
-        &__header{
-            margin-bottom: 20px ;
+        &__header {
+            margin-bottom: 20px;
         }
     }
 }
