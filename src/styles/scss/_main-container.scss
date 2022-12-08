@@ -4,9 +4,10 @@
     padding-right: 3em;
 
     &__header {
-
+        
 
         &__wrap {
+            z-index: 100;
             position: relative;
             padding-top: 60px;
             display: flex;

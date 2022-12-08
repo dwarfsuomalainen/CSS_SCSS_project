@@ -58,6 +58,7 @@
   padding-right: 3em;
 }
 .main-container__header__wrap {
+  z-index: 100;
   position: relative;
   padding-top: 60px;
   display: flex;
