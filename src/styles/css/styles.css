@@ -54,32 +54,24 @@
 
 .main-container {
   padding-top: 60px;
-  padding-left: 10em;
-  padding-right: 10em;
-}
-.main-container__header {
-  width: 1770px;
-  height: 35px;
+  padding-left: 3em;
+  padding-right: 3em;
 }
 .main-container__header__wrap {
   position: relative;
   padding-top: 60px;
   display: flex;
+  justify-content: space-between;
 }
 .main-container__header__wrap__logo {
   display: flex;
-  padding-left: 0px;
-  max-height: 35px;
-  max-width: 127px;
+  position: relative;
+  height: 35px;
+  width: 127px;
 }
 .main-container__header__wrap__navbar {
   display: flex;
-  position: absolute;
-  top: 70px;
-  right: 460px;
-  max-height: 25px;
-  max-width: 903px;
-  align-items: center;
+  position: relative;
   justify-content: space-between;
 }
 .main-container__header__wrap__navbar__item,
@@ -104,59 +96,99 @@
   padding-top: 180px;
   display: grid;
   position: relative;
-  grid-template: "a1 a1 a1 a2 a2 a3 a3" "a1 a1 a1 a4 a4 a5 a5";
+  grid-template: "a1 a2 a3" "a1 a4 a5";
 }
 .main-container__pinned-section__wrap__pinned-element {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  flex-direction: column;
   margin: 8px;
-  align-items: center;
   position: relative;
   cursor: pointer;
   border-radius: 16px;
-  justify-content: center;
-  align-items: center;
+  transition: all 0.2s linear;
 }
-.main-container__pinned-section__wrap__pinned-element :hover {
-  transform: translateY(-4px);
+.main-container__pinned-section__wrap__pinned-element__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.main-container__pinned-section__wrap__pinned-element__image {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+.main-container__pinned-section__wrap__pinned-element__content__pill-button {
+  background-color: antiquewhite;
+  padding: 5px 10px;
+  width: fit-content;
+  font-family: Mulish, sans-serif;
+  text-transform: uppercase;
+  font-size: 8px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-radius: 16px;
 }
 .main-container__pinned-section__wrap__pinned-element:nth-child(1) {
   grid-area: a1;
   width: 516px;
   height: 321px;
   padding: 70px 30px 25px 30px;
-  background-position: center;
-  background-position: left;
+  background: url(/src/img/pinned/one_space.jpeg);
   background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+.main-container__pinned-section__wrap__pinned-element:nth-child(1):hover {
+  transform: translateY(-4px);
 }
 .main-container__pinned-section__wrap__pinned-element:nth-child(2) {
   grid-area: a2;
   width: 348px;
   height: 105px;
   padding: 70px 30px 25px 30px;
+  background: url(/src/img/pinned/open_space_for_more.jpeg);
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+.main-container__pinned-section__wrap__pinned-element:nth-child(2):hover {
+  transform: translateY(-4px);
 }
 .main-container__pinned-section__wrap__pinned-element:nth-child(3) {
   grid-area: a3;
   width: 348px;
   height: 105px;
   padding: 70px 30px 25px 30px;
+  background-color: #ffb469;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+.main-container__pinned-section__wrap__pinned-element:nth-child(3):hover {
+  transform: translateY(-4px);
 }
 .main-container__pinned-section__wrap__pinned-element:nth-child(4) {
   grid-area: a4;
   width: 348px;
   height: 105px;
   padding: 70px 30px 25px 30px;
+  background: url(/src/img/pinned/space_for_mind.jpeg);
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+.main-container__pinned-section__wrap__pinned-element:nth-child(4):hover {
+  transform: translateY(-4px);
 }
 .main-container__pinned-section__wrap__pinned-element:nth-child(5) {
   grid-area: a5;
   width: 348px;
   height: 105px;
   padding: 70px 30px 25px 30px;
+  background: url(/src/img/pinned/sea_is_calm.jpeg);
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+.main-container__pinned-section__wrap__pinned-element:nth-child(5):hover {
+  transform: translateY(-4px);
 }
 .main-container__global {
   display: flex;

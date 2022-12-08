@@ -1,33 +1,27 @@
 .main-container {
     padding-top: 60px;
-
-    padding-left: 10em;
-    padding-right: 10em;
+    padding-left: 3em;
+    padding-right: 3em;
 
     &__header {
-        width: 1770px;
-        height: 35px;
+
 
         &__wrap {
             position: relative;
             padding-top: 60px;
             display: flex;
+            justify-content: space-between;
 
             &__logo {
                 display: flex;
-                padding-left: 00px;
-                max-height: 35px;
-                max-width: 127px;
+                position: relative;
+                height: 35px;
+                width: 127px;
             }
 
             &__navbar {
                 display: flex;
-                position: absolute;
-                top: 70px;
-                right: 460px;
-                max-height: 25px;
-                max-width: 903px;
-                align-items: center;
+                position: relative;
                 justify-content: space-between;
 
 
@@ -63,31 +57,44 @@
             display: grid;
             position: relative;
             grid-template:
-                "a1 a1 a1 a2 a2 a3 a3"
-                "a1 a1 a1 a4 a4 a5 a5";
+                "a1 a2 a3"
+                "a1 a4 a5";
 
 
             &__pinned-element {
                 display: flex;
-                justify-content: center;
+                justify-content: space-between;
+                flex-direction: column;
                 margin: 8px;
-                align-items: center;
                 position: relative;
                 cursor: pointer;
                 border-radius: 16px;
+                transition: all .2s linear;
 
-                & :hover {
-                    transform: translateY(-4px);
-                }
+                &__image {}
 
+                &__content {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
 
-                justify-content: center;
-                align-items: center;
+                    &__pill-button {
+                        background-color: antiquewhite;
+                        padding: 5px 10px;
+                        width: fit-content;
+                        font-family: Mulish, sans-serif;
+                        text-transform: uppercase;
+                        font-size: 8px;
+                        font-weight: bold;
+                        letter-spacing: 2px;
+                        border-radius: 16px;
+                    }
 
-                &__image {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: contain;
+                    &__link-to-author {}
+
+                    &__pinned-title {}
+
                 }
             }
 
@@ -96,9 +103,14 @@
                 width: 516px;
                 height: 321px;
                 padding: 70px 30px 25px 30px;
-                background-position: center;
-                background-position: left;
+                background: url(/src/img/pinned/one_space.jpeg);
                 background-size: cover;
+                position: relative;
+                overflow: hidden;
+
+                &:hover {
+                    transform: translateY(-4px);
+                }
             }
 
             &__pinned-element:nth-child(2) {
@@ -106,6 +118,14 @@
                 width: 348px;
                 height: 105px;
                 padding: 70px 30px 25px 30px;
+                background: url(/src/img/pinned/open_space_for_more.jpeg);
+                background-size: cover;
+                position: relative;
+                overflow: hidden;
+
+                &:hover {
+                    transform: translateY(-4px);
+                }
             }
 
             &__pinned-element:nth-child(3) {
@@ -113,6 +133,15 @@
                 width: 348px;
                 height: 105px;
                 padding: 70px 30px 25px 30px;
+                background-color: #ffb469;
+                background-size: cover;
+                position: relative;
+                overflow: hidden;
+
+                &:hover {
+                    transform: translateY(-4px);
+                }
+
             }
 
             &__pinned-element:nth-child(4) {
@@ -120,6 +149,14 @@
                 width: 348px;
                 height: 105px;
                 padding: 70px 30px 25px 30px;
+                background: url(/src/img/pinned/space_for_mind.jpeg);
+                background-size: cover;
+                position: relative;
+                overflow: hidden;
+
+                &:hover {
+                    transform: translateY(-4px);
+                }
             }
 
             &__pinned-element:nth-child(5) {
@@ -127,6 +164,14 @@
                 width: 348px;
                 height: 105px;
                 padding: 70px 30px 25px 30px;
+                background: url(/src/img/pinned/sea_is_calm.jpeg);
+                background-size: cover;
+                position: relative;
+                overflow: hidden;
+
+                &:hover {
+                    transform: translateY(-4px);
+                }
             }
         }
 
