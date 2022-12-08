@@ -92,9 +92,10 @@
 }
 .main-container__pinned-section {
   margin-top: 10px;
+  margin-bottom: 40px;
 }
 .main-container__pinned-section__wrap {
-  padding-top: 180px;
+  padding-top: 60px;
   display: grid;
   position: relative;
   grid-template: "a1 a2 a3" "a1 a4 a5";
@@ -195,6 +196,73 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.main-container__global__big-cards {
+  position: relative;
+  cursor: pointer;
+  border-radius: 16px;
+  transition: all 0.2s linear;
+  display: flex;
+  flex-direction: column;
+}
+.main-container__global__big-cards__big-card {
+  position: relative;
+  cursor: pointer;
+  border-radius: 16px;
+  transition: all 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-container__global__big-cards__big-card svg {
+  width: 40px;
+  height: 40px;
+}
+.main-container__global__big-cards__big-card:nth-child(1) {
+  display: flex;
+  width: 1204px;
+  height: 400px;
+  background: url(/src/img/big_cards_imgs/perfect_place.jpeg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+.main-container__global__big-cards__big-card:nth-child(1):hover {
+  scale: 1.1;
+  background-size: 105%;
+}
+.main-container__global__big-cards__big-card:nth-child(2) {
+  display: flex;
+  width: 1204px;
+  height: 608px;
+  background: url(/src/img/big_cards_imgs/i_work_best.jpeg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+.main-container__global__big-cards__big-card:nth-child(2):hover {
+  background-size: 105%;
+}
+.main-container__global__big-cards__big-card:nth-child(3) {
+  display: flex;
+  width: 1204px;
+  height: 536px;
+  background: url(/src/img/big_cards_imgs/the_perfect_place.jpeg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+.main-container__global__big-cards__big-card:nth-child(3):hover {
+  background-size: 105%;
+}
+.main-container__global__header {
+  margin-bottom: 20px;
 }
 
 body {

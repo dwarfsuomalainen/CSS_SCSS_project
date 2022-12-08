@@ -52,9 +52,10 @@
 
     &__pinned-section {
         margin-top: 10px;
+        margin-bottom: 40px;
 
         &__wrap {
-            padding-top: 180px;
+            padding-top: 60px;
             display: grid;
             position: relative;
             grid-template:
@@ -184,5 +185,84 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        &__big-cards{
+            position: relative;
+            cursor: pointer;
+            border-radius: 16px;
+            transition: all .2s linear;
+            display: flex;
+            flex-direction: column;
+
+            &__big-card{
+                position: relative;
+                cursor: pointer;
+                border-radius: 16px;
+                transition: all .5s;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                & svg{
+                    width: 40px;
+                    height: 40px;
+                }
+
+
+                &:nth-child(1) {
+                    display: flex;
+                    width: 1204px;
+                    height: 400px;
+                    background: url(/src/img/big_cards_imgs/perfect_place.jpeg);
+                    background-size: cover;
+                    background-position: center;
+                    position: relative;
+                    overflow: hidden;
+                    margin-bottom: 40px;
+                    &:hover{
+                        scale: 1.1;
+                        background-size: 105%;
+    
+                    }
+
+                }
+                &:nth-child(2) {
+                    display: flex;
+                    width: 1204px;
+                    height: 608px;
+                    background: url(/src/img/big_cards_imgs/i_work_best.jpeg);
+                    background-size: cover;
+                    background-position: center;
+                    position: relative;
+                    overflow: hidden;
+                    margin-bottom: 40px;
+                    &:hover{
+                        background-size: 105%;
+    
+                    }
+    
+                }
+                &:nth-child(3) {
+                    display: flex;
+                    width: 1204px;
+                    height: 536px;
+                    background: url(/src/img/big_cards_imgs/the_perfect_place.jpeg);
+                    background-size: cover;
+                    background-position: center;
+                    position: relative;
+                    overflow: hidden;
+                    margin-bottom: 40px;
+                    &:hover{
+                        background-size: 105%;
+    
+                    }
+                }
+            }
+ 
+        }
+
+        &__header{
+            margin-bottom: 20px ;
+        }
     }
 }
