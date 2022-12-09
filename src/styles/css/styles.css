@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Mulish);
+@import url("https://fonts.googleapis.com/css?family=Mulish:wght@400;500;600;700;900&display=swap");
 .upper-header {
   position: fixed;
   z-index: 100;
@@ -116,8 +116,8 @@
   align-items: center;
   flex-direction: column;
   padding-top: 60px;
-  padding-left: 3em;
-  padding-right: 3em;
+  margin-left: 3em;
+  margin-right: 3em;
 }
 .main-container__header {
   display: block;
@@ -356,27 +356,35 @@
   flex-direction: column;
 }
 .main-container__global__big-cards__big-card {
-  position: relative;
   cursor: pointer;
   border-radius: 16px;
   transition: all 0.5s;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .main-container__global__big-cards__big-card svg {
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
+  fill: beige;
+}
+.main-container__global__big-cards__big-card a {
+  text-decoration: none;
+  text-decoration-line: none;
+  color: beige;
 }
 .main-container__global__big-cards__big-card__pill-button {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  padding: 5px 10px;
   width: max-content;
+  padding: 5px 10px;
+  margin: 10px;
   font-family: Mulish, sans-serif;
   text-transform: uppercase;
   font-size: 8px;
+  color: beige;
   border: grey solid 1px;
   letter-spacing: 2px;
   border-radius: 16px;
@@ -386,23 +394,30 @@
   font-family: Mulish, sans-serif;
   padding-left: 14px;
   color: beige;
+  left: 0px;
+}
+.main-container__global__big-cards__big-card__article {
+  font-size: 14px;
+  font-family: Mulish, sans-serif;
+  padding-left: 14px;
+  color: beige;
+  left: 0px;
 }
 .main-container__global__big-cards__big-card__title {
   font-family: Corben, serif;
   padding-left: 14px;
   color: beige;
   height: 40px;
-  text-decoration: none;
-  text-decoration-line: none;
 }
 .main-container__global__big-cards__big-card:nth-child(1) {
-  display: flex;
   width: 1204px;
   height: 673px;
-  background: url(../../img/big_cards_imgs/perfect_place.jpeg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/big_cards_imgs/perfect_place.jpeg);
   background-size: cover;
   background-position: center;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   margin-bottom: 40px;
 }
@@ -414,7 +429,7 @@
   display: flex;
   width: 1204px;
   height: 808px;
-  background: url(../../img/big_cards_imgs/i_work_best.jpeg);
+  background: linear-gradient(rgb(252, 160, 3), rgba(252, 160, 3, 0.5)), url(../../img/big_cards_imgs/i_work_best.jpeg);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -428,7 +443,7 @@
   display: flex;
   width: 1204px;
   height: 673px;
-  background: url(../../img/big_cards_imgs/the_perfect_place.jpeg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/big_cards_imgs/the_perfect_place.jpeg);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -472,15 +487,29 @@
   border-radius: 16px;
   transition: all 0.2s linear;
 }
+.main-container__global__grid__grid-cards__grid-card a {
+  text-decoration: none;
+  text-decoration-line: none;
+  color: beige;
+}
+.main-container__global__grid__grid-cards__grid-card__article {
+  font-size: 14px;
+  font-family: Mulish, sans-serif;
+  padding-left: 14px;
+  color: beige;
+  left: 0px;
+}
 .main-container__global__grid__grid-cards__grid-card__pill-button {
   display: flex;
-  justify-content: space-between;
-  align-items: stretch;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
   padding: 5px 10px;
-  width: max-content;
+  margin: 10px;
   font-family: Mulish, sans-serif;
   text-transform: uppercase;
   font-size: 8px;
+  color: beige;
   border: grey solid 1px;
   letter-spacing: 2px;
   border-radius: 16px;
@@ -493,6 +522,7 @@
 }
 .main-container__global__grid__grid-cards__grid-card__title {
   font-family: Corben, serif;
+  font-size: 16px;
   padding-left: 14px;
   color: beige;
   height: 40px;
@@ -639,6 +669,9 @@
 }
 body {
   background-color: #252530;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=styles.css.map */
