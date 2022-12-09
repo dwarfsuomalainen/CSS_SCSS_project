@@ -1,4 +1,7 @@
 .main-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     padding-top: 60px;
     padding-left: 3em;
     padding-right: 3em;
@@ -25,7 +28,6 @@
             }
 
             &__navbar {
-                position: relative;
 
                 ul {
                     overflow: hidden;
@@ -35,13 +37,11 @@
                 li :hover:before {
                     content: "";
                     position: absolute;
-                    position: absolute;
-                    top: -16px;
                     background: grey;
                     width: 6px;
                     height: 6px;
                     border-radius: 100%;
-                    left: calc(51% - 1px);
+                    top: 66px;
 
                 }
 
@@ -113,14 +113,15 @@
                     justify-content: space-between;
 
                     &__pill-button {
-                        background-color: antiquewhite;
-                        margin: 10px 14px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                         padding: 5px 10px;
                         width: 42px;
                         font-family: Mulish, sans-serif;
                         text-transform: uppercase;
                         font-size: 8px;
-                        font-weight: bold;
+                        border: grey solid 1px;
                         letter-spacing: 2px;
                         border-radius: 16px;
                     }
@@ -132,9 +133,9 @@
                         color: beige;
                     }
 
-                   &__pinned-title {
+                    &__pinned-title {
                         font-family: Corben, serif;
-                       // font-size: 29px;
+                        // font-size: 29px;
                         padding-left: 14px;
                         color: beige;
                         height: 40px;
@@ -148,7 +149,7 @@
                 width: 516px;
                 height: 371px;
                 padding: 20px 30px 25px 30px;
-                background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) ,url("../../img/pinned/one_space.jpeg");
+                background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/pinned/one_space.jpeg");
                 background-size: cover;
                 position: relative;
                 overflow: hidden;
@@ -165,6 +166,7 @@
                 &:hover {
                     transform: translateY(-4px);
                 }
+                
             }
 
             &__pinned-element:nth-child(2) {
@@ -172,10 +174,11 @@
                 width: 348px;
                 height: 155px;
                 padding: 20px 30px 25px 30px;
-                background: linear-gradient(rgba(25, 6, 237, 0.8), rgba(25, 6, 237,0.8)) ,url(../../img/pinned/open_space_for_more.jpeg);
+                background: linear-gradient(rgba(25, 6, 237, 0.8), rgba(25, 6, 237, 0.8)), url(../../img/pinned/open_space_for_more.jpeg);
                 background-size: cover;
                 position: relative;
                 overflow: hidden;
+
                 .main-container__pinned-section__wrap__pinned-element__content__link-to-author {
                     padding-top: 40px;
                     margin: 0;
@@ -202,6 +205,7 @@
                 background-size: cover;
                 position: relative;
                 overflow: hidden;
+
                 .main-container__pinned-section__wrap__pinned-element__content__link-to-author {
                     padding-top: 40px;
                     margin: 0;
@@ -213,6 +217,7 @@
                     font-size: 19px;
                     color: rgb(68, 67, 67)
                 }
+
                 &:hover {
                     transform: translateY(-4px);
                 }
@@ -224,10 +229,11 @@
                 width: 348px;
                 height: 155px;
                 padding: 20px 30px 25px 30px;
-                background: linear-gradient(rgba(237, 6, 202, 0.8), rgba(237, 6, 202, 0.8)) ,url(../../img/pinned/space_for_mind.jpeg);
+                background: linear-gradient(rgba(237, 6, 202, 0.8), rgba(237, 6, 202, 0.8)), url(../../img/pinned/space_for_mind.jpeg);
                 background-size: cover;
                 position: relative;
                 overflow: hidden;
+
                 .main-container__pinned-section__wrap__pinned-element__content__link-to-author {
                     padding-top: 40px;
                     margin: 0;
@@ -239,6 +245,7 @@
                     font-size: 19px;
                     color: rgb(229, 223, 223)
                 }
+
                 &:hover {
                     transform: translateY(-4px);
                 }
@@ -249,10 +256,11 @@
                 width: 348px;
                 height: 155px;
                 padding: 20px 30px 25px 30px;
-                background: linear-gradient(rgba(255, 192, 203, 0.8), rgba(255, 192, 203, 0.8)) ,url(../../img/pinned/sea_is_calm.jpeg);
+                background: linear-gradient(rgba(255, 192, 203, 0.8), rgba(255, 192, 203, 0.8)), url(../../img/pinned/sea_is_calm.jpeg);
                 background-size: cover;
                 position: relative;
                 overflow: hidden;
+
                 .main-container__pinned-section__wrap__pinned-element__content__link-to-author {
                     padding-top: 40px;
                     margin: 0;
@@ -264,6 +272,7 @@
                     font-size: 19px;
                     color: rgb(68, 67, 67)
                 }
+
                 &:hover {
                     transform: translateY(-4px);
                 }
@@ -276,6 +285,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
 
         &__big-cards {
             position: relative;
@@ -298,15 +308,17 @@
                     width: 40px;
                     height: 40px;
                 }
+
                 &__pill-button {
                     display: flex;
-                    background-color: antiquewhite;
-                    margin: 10px 14px;
+                    justify-content:space-between;
+                    align-items:stretch;
                     padding: 5px 10px;
+                    width:max-content;
                     font-family: Mulish, sans-serif;
                     text-transform: uppercase;
                     font-size: 8px;
-                    font-weight: bold;
+                    border: grey solid 1px;
                     letter-spacing: 2px;
                     border-radius: 16px;
                 }
@@ -318,9 +330,9 @@
                     color: beige;
                 }
 
-               &__title {
+                &__title {
                     font-family: Corben, serif;
-                   // font-size: 29px;
+                    // font-size: 29px;
                     padding-left: 14px;
                     color: beige;
                     height: 40px;
@@ -388,219 +400,236 @@
             display: flex;
             margin-bottom: 30px;
             justify-content: center;
-            font-family: Mulish,sans-serif;
+            font-family: Mulish, sans-serif;
             font-weight: 800;
             font-size: 11px;
             letter-spacing: 2px;
-            line-height: 16,5px;
+            line-height: 16, 5px;
             color: antiquewhite;
             text-transform: uppercase;
 
 
-     
+
         }
-        &__grid{
+
+        &__grid {
             display: flex;
             position: relative;
             margin-top: 10px;
             margin-bottom: 40px;
-        
-            &__grid-cards{
+
+            &__grid-cards {
                 padding-top: 60px;
                 display: grid;
                 position: relative;
                 grid-template:
                     "a1 a1 a1 a2 a2 a2  "
                     "a3 a3 a4 a4 a5 a5";
-                
-                    &__grid-card{
 
+                &__grid-card {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    margin: 8px;
+                    position: relative;
+                    cursor: pointer;
+                    border-radius: 16px;
+                    transition: all .2s linear;
+
+                    &__pill-button {
                         display: flex;
-                        justify-content: space-between;
-                        flex-direction: column;
-                        margin: 8px;
-                        position: relative;
-                        cursor: pointer;
+                        justify-content:space-between;
+                        align-items:stretch;
+                        padding: 5px 10px;
+                        width:max-content;
+                        font-family: Mulish, sans-serif;
+                        text-transform: uppercase;
+                        font-size: 8px;
+                        border: grey solid 1px;
+                        letter-spacing: 2px;
                         border-radius: 16px;
-                        transition: all .2s linear;
 
-                        &__pill-button {
-                            display: flex;
-                            background-color: antiquewhite;
-                            margin: 10px 14px;
-                            padding: 5px 10px;
-                            font-family: Mulish, sans-serif;
-                            text-transform: uppercase;
-                            font-size: 8px;
-                            font-weight: bold;
-                            letter-spacing: 2px;
-                            border-radius: 16px;
-                        }
-        
-                        &__link-to-author {
-                            font-size: 14px;
-                            font-family: Mulish, sans-serif;
-                            padding-left: 14px;
-                            color: beige;
-                        }
-        
-                       &__title {
-                            font-family: Corben, serif;
-                           // font-size: 29px;
-                            padding-left: 14px;
-                            color: beige;
-                            height: 40px;
-                            text-decoration: none;
-                            text-decoration-line: none;
-                        }
+                    }
+
+                    &__link-to-author {
+                        font-size: 14px;
+                        font-family: Mulish, sans-serif;
+                        padding-left: 14px;
+                        color: beige;
+                    }
+
+                    &__title {
+                        font-family: Corben, serif;
+                        // font-size: 29px;
+                        padding-left: 14px;
+                        color: beige;
+                        height: 40px;
+                        text-decoration: none;
+                        text-decoration-line: none;
+                    }
                 }
+
                 &__grid-card:nth-child(1) {
                     grid-area: a1;
-                    width: 589px;
-                    height: 589px;
-                    padding: 20px 30px 25px 30px;
-                    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) ,url("../../img/grid_imgs/problems_grid_1.jpeg");
+                    width: 463px;
+                    height: 509px;
+                    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/grid_imgs/problems_grid_1.jpeg");
                     background-size: cover;
                     position: relative;
                     overflow: hidden;
-    
+
                     .main-container__pinned-section__wrap__pinned-element__content__link-to-author {
                         padding-top: 150px;
                     }
-    
+
                     .main-container__pinned-section__wrap__pinned-element__content__pinned-title {
                         margin: 0;
                     }
-    
+
                     &:hover {
                         transform: translateY(-4px);
-                        
+
                     }
                 }
+
                 &__grid-card:nth-child(2) {
                     grid-area: a2;
-                    width: 589px;
-                    height: 589px;
-                    padding: 20px 30px 25px 30px;
-                    background: linear-gradient(rgba(25, 6, 237, 0.8), rgba(25, 6, 237,0.8)) ,url(../../img/pinned/open_space_for_more.jpeg);
+                    width: 463px;
+                    height: 509px;
+
+                    background: linear-gradient(rgba(25, 6, 237, 0.8), rgba(25, 6, 237, 0.8)), url(../../img/pinned/open_space_for_more.jpeg);
                     background-size: cover;
                     position: relative;
                     overflow: hidden;
+
                     .main-container__pinned-section__wrap__pinned-element__content__link-to-author {
                         padding-top: 40px;
                         color: rgb(229, 223, 223)
                     }
-    
+
                     .main-container__pinned-section__wrap__pinned-element__content__pinned-title {
                         padding-bottom: 40px;
                         font-size: 19px;
                         color: rgb(229, 223, 223)
                     }
-    
+
                     &:hover {
                         transform: translateY(-4px);
                     }
                 }
-    
+
                 &__grid-card:nth-child(3) {
                     grid-area: a3;
-                    width: 384px;
-                    height: 465px;
-                    padding: 20px 30px 25px 30px;
+                    width: 302px;
+                    height: 376px;
                     background-color: #ffb469;
                     background-size: cover;
                     position: relative;
                     overflow: hidden;
+
                     .main-container__pinned-section__wrap__pinned-element__content__link-to-author {
                         padding-top: 40px;
                         color: rgb(68, 67, 67)
                     }
-    
+
                     .main-container__pinned-section__wrap__pinned-element__content__pinned-title {
                         padding-bottom: 40px;
                         font-size: 19px;
                         color: rgb(68, 67, 67)
                     }
+
                     &:hover {
                         transform: translateY(-4px);
                     }
-    
+
                 }
-    
+
                 &__grid-card:nth-child(4) {
                     grid-area: a4;
-                    width: 384px;
-                    height: 465px;
-                    padding: 20px 30px 25px 30px;
-                    background: linear-gradient(rgba(237, 6, 202, 0.8), rgba(237, 6, 202, 0.8)) ,url(../../img/pinned/space_for_mind.jpeg);
+                    width: 302px;
+                    height: 376px;
+                    background: linear-gradient(rgba(237, 6, 202, 0.8), rgba(237, 6, 202, 0.8)), url(../../img/pinned/space_for_mind.jpeg);
                     background-size: cover;
                     position: relative;
                     overflow: hidden;
+
                     .main-container__pinned-section__wrap__pinned-element__content__link-to-author {
                         padding-top: 40px;
                         color: rgb(229, 223, 223)
                     }
-    
+
                     .main-container__pinned-section__wrap__pinned-element__content__pinned-title {
                         padding-bottom: 40px;
                         font-size: 19px;
                         color: rgb(229, 223, 223)
                     }
+
                     &:hover {
                         transform: translateY(-4px);
                     }
                 }
-    
+
                 &__grid-card:nth-child(5) {
                     grid-area: a5;
-                    width: 384px;
-                    height: 465px;
-                    padding: 20px 30px 25px 30px;
-                    background: linear-gradient(rgba(255, 192, 203, 0.8), rgba(255, 192, 203, 0.8)) ,url(../../img/pinned/sea_is_calm.jpeg);
+                    width: 302px;
+                    height: 376px;
+                    background: linear-gradient(rgba(255, 192, 203, 0.8), rgba(255, 192, 203, 0.8)), url(../../img/pinned/sea_is_calm.jpeg);
                     background-size: cover;
                     position: relative;
                     overflow: hidden;
+
                     .main-container__pinned-section__wrap__pinned-element__content__link-to-author {
                         padding-top: 40px;
                         margin: 0;
                         color: rgb(68, 67, 67)
                     }
-    
+
                     .main-container__pinned-section__wrap__pinned-element__content__pinned-title {
                         padding-bottom: 0px;
                         font-size: 19px;
                         color: rgb(68, 67, 67)
                     }
+
                     &:hover {
                         transform: translateY(-4px);
                     }
                 }
             }
         }
-        &__button-more{
+
+        &__button-more {
             display: flex;
+            position: relative;
+            align-items: center;
+            justify-content: center;
             width: 1230px;
             height: 86px;
-            padding: 32 40 32 40;
             border-radius: 16px;
-            background-color: rgb(69,69,95);
+            background-color: rgb(69, 69, 95);
             margin-bottom: 30px;
-            justify-content: center;
-text-align: center;
-            font-family: Mulish,sans-serif;
+            font-family: Mulish, sans-serif;
             font-weight: 800;
             font-size: 11px;
             letter-spacing: 2px;
-            line-height: 16,5px;
+            line-height: 16, 5px;
             color: antiquewhite;
             text-transform: uppercase;
 
-            &:hover{
+            &:hover {
                 background-color: #ffb469;
-                scale: (1,1);
+                scale: (1, 1);
             }
 
         }
+        &__form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 700px;
+            height: 380px;
+        }
+
     }
 
 }

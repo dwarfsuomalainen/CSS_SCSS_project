@@ -2,6 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Corben);
 .upper-header {
   position: fixed;
+  z-index: 100;
   background-color: #262626;
   box-shadow: 0 2px black;
   width: 100%;
@@ -39,7 +40,6 @@
   font-size: 14px;
 }
 .upper-header__logo {
-  position: relative;
   padding-top: 20px;
   padding-left: 20px;
   align-self: center;
@@ -48,12 +48,74 @@
 }
 
 .footer {
+  z-index: 100;
+  position: relative;
+  padding-top: 60px;
   display: flex;
+  flex-direction: column;
   height: 200px;
-  width: 80%;
+  width: 1069px;
+}
+.footer__nav {
+  width: 660px;
+  height: 30px;
+}
+.footer__nav ul {
+  overflow: hidden;
+  list-style: none;
+}
+.footer__nav li :hover:before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  background: grey;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+}
+.footer__nav li {
+  float: left;
+  list-style: none;
+}
+.footer__nav li a {
+  display: block;
+  padding-left: 16px;
+  text-align: center;
+  text-decoration: none;
+  text-decoration-line: none;
+  font-size: 12px;
+  font-family: Mulish, sans-serif;
+  font-weight: 400;
+  color: rgb(235, 235, 235);
+}
+.footer__nav li a:hover {
+  color: aqua;
+}
+.footer__icons {
+  display: flex;
+  position: relative;
+  width: 376px;
+  height: 26px;
+  color: antiquewhite;
+}
+.footer__footer-copyright {
+  width: 660px;
+  height: 13px;
+  display: flex;
+  justify-content: space-between;
+  font-family: Mulish, sans-serif;
+  font-weight: 200;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: antiquewhite;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .main-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   padding-top: 60px;
   padding-left: 3em;
   padding-right: 3em;
@@ -77,9 +139,6 @@
   height: 35px;
   width: 127px;
 }
-.main-container__header__wrap__navbar {
-  position: relative;
-}
 .main-container__header__wrap__navbar ul {
   overflow: hidden;
   list-style: none;
@@ -87,13 +146,11 @@
 .main-container__header__wrap__navbar li :hover:before {
   content: "";
   position: absolute;
-  position: absolute;
-  top: -16px;
   background: grey;
   width: 6px;
   height: 6px;
   border-radius: 100%;
-  left: calc(51% - 1px);
+  top: 66px;
 }
 .main-container__header__wrap__navbar li {
   float: left;
@@ -150,14 +207,15 @@
   justify-content: space-between;
 }
 .main-container__pinned-section__wrap__pinned-element__content__pill-button {
-  background-color: antiquewhite;
-  margin: 10px 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 5px 10px;
   width: 42px;
   font-family: Mulish, sans-serif;
   text-transform: uppercase;
   font-size: 8px;
-  font-weight: bold;
+  border: grey solid 1px;
   letter-spacing: 2px;
   border-radius: 16px;
 }
@@ -313,13 +371,14 @@
 }
 .main-container__global__big-cards__big-card__pill-button {
   display: flex;
-  background-color: antiquewhite;
-  margin: 10px 14px;
+  justify-content: space-between;
+  align-items: stretch;
   padding: 5px 10px;
+  width: max-content;
   font-family: Mulish, sans-serif;
   text-transform: uppercase;
   font-size: 8px;
-  font-weight: bold;
+  border: grey solid 1px;
   letter-spacing: 2px;
   border-radius: 16px;
 }
@@ -416,13 +475,14 @@
 }
 .main-container__global__grid__grid-cards__grid-card__pill-button {
   display: flex;
-  background-color: antiquewhite;
-  margin: 10px 14px;
+  justify-content: space-between;
+  align-items: stretch;
   padding: 5px 10px;
+  width: max-content;
   font-family: Mulish, sans-serif;
   text-transform: uppercase;
   font-size: 8px;
-  font-weight: bold;
+  border: grey solid 1px;
   letter-spacing: 2px;
   border-radius: 16px;
 }
@@ -442,9 +502,8 @@
 }
 .main-container__global__grid__grid-cards__grid-card:nth-child(1) {
   grid-area: a1;
-  width: 589px;
-  height: 589px;
-  padding: 20px 30px 25px 30px;
+  width: 463px;
+  height: 509px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/grid_imgs/problems_grid_1.jpeg");
   background-size: cover;
   position: relative;
@@ -461,9 +520,8 @@
 }
 .main-container__global__grid__grid-cards__grid-card:nth-child(2) {
   grid-area: a2;
-  width: 589px;
-  height: 589px;
-  padding: 20px 30px 25px 30px;
+  width: 463px;
+  height: 509px;
   background: linear-gradient(rgba(25, 6, 237, 0.8), rgba(25, 6, 237, 0.8)), url(../../img/pinned/open_space_for_more.jpeg);
   background-size: cover;
   position: relative;
@@ -483,9 +541,8 @@
 }
 .main-container__global__grid__grid-cards__grid-card:nth-child(3) {
   grid-area: a3;
-  width: 384px;
-  height: 465px;
-  padding: 20px 30px 25px 30px;
+  width: 302px;
+  height: 376px;
   background-color: #ffb469;
   background-size: cover;
   position: relative;
@@ -505,9 +562,8 @@
 }
 .main-container__global__grid__grid-cards__grid-card:nth-child(4) {
   grid-area: a4;
-  width: 384px;
-  height: 465px;
-  padding: 20px 30px 25px 30px;
+  width: 302px;
+  height: 376px;
   background: linear-gradient(rgba(237, 6, 202, 0.8), rgba(237, 6, 202, 0.8)), url(../../img/pinned/space_for_mind.jpeg);
   background-size: cover;
   position: relative;
@@ -527,9 +583,8 @@
 }
 .main-container__global__grid__grid-cards__grid-card:nth-child(5) {
   grid-area: a5;
-  width: 384px;
-  height: 465px;
-  padding: 20px 30px 25px 30px;
+  width: 302px;
+  height: 376px;
   background: linear-gradient(rgba(255, 192, 203, 0.8), rgba(255, 192, 203, 0.8)), url(../../img/pinned/sea_is_calm.jpeg);
   background-size: cover;
   position: relative;
@@ -550,14 +605,14 @@
 }
 .main-container__global__button-more {
   display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
   width: 1230px;
   height: 86px;
-  padding: 32 40 32 40;
   border-radius: 16px;
   background-color: rgb(69, 69, 95);
   margin-bottom: 30px;
-  justify-content: center;
-  text-align: center;
   font-family: Mulish, sans-serif;
   font-weight: 800;
   font-size: 11px;
@@ -569,6 +624,14 @@
 .main-container__global__button-more:hover {
   background-color: #ffb469;
   scale: 1, 1;
+}
+.main-container__global__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 700px;
+  height: 380px;
 }
 
 body {
