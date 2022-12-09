@@ -82,6 +82,8 @@
     }
 
     &__pinned-section {
+        display: flex;
+        position: relative;
         margin-top: 10px;
         margin-bottom: 40px;
 
@@ -104,8 +106,6 @@
                 border-radius: 16px;
                 transition: all .2s linear;
 
-                &__image {}
-
                 &__content {
                     position: relative;
                     display: flex;
@@ -115,9 +115,8 @@
                     &__pill-button {
                         background-color: antiquewhite;
                         margin: 10px 14px;
-
                         padding: 5px 10px;
-                        width: fit-content;
+                        width: 42px;
                         font-family: Mulish, sans-serif;
                         text-transform: uppercase;
                         font-size: 8px;
@@ -271,8 +270,6 @@
             }
         }
 
-
-
     }
 
     &__global {
@@ -301,7 +298,35 @@
                     width: 40px;
                     height: 40px;
                 }
+                &__pill-button {
+                    display: flex;
+                    background-color: antiquewhite;
+                    margin: 10px 14px;
+                    padding: 5px 10px;
+                    font-family: Mulish, sans-serif;
+                    text-transform: uppercase;
+                    font-size: 8px;
+                    font-weight: bold;
+                    letter-spacing: 2px;
+                    border-radius: 16px;
+                }
 
+                &__link-to-author {
+                    font-size: 14px;
+                    font-family: Mulish, sans-serif;
+                    padding-left: 14px;
+                    color: beige;
+                }
+
+               &__title {
+                    font-family: Corben, serif;
+                   // font-size: 29px;
+                    padding-left: 14px;
+                    color: beige;
+                    height: 40px;
+                    text-decoration: none;
+                    text-decoration-line: none;
+                }
 
                 &:nth-child(1) {
                     display: flex;
@@ -317,7 +342,6 @@
                     &:hover {
                         scale: (1.1);
                         background-size: 105%;
-
                     }
 
                 }
@@ -361,7 +385,222 @@
         }
 
         &__header {
-            margin-bottom: 20px;
+            display: flex;
+            margin-bottom: 30px;
+            justify-content: center;
+            font-family: Mulish,sans-serif;
+            font-weight: 800;
+            font-size: 11px;
+            letter-spacing: 2px;
+            line-height: 16,5px;
+            color: antiquewhite;
+            text-transform: uppercase;
+
+
+     
+        }
+        &__grid{
+            display: flex;
+            position: relative;
+            margin-top: 10px;
+            margin-bottom: 40px;
+        
+            &__grid-cards{
+                padding-top: 60px;
+                display: grid;
+                position: relative;
+                grid-template:
+                    "a1 a1 a1 a2 a2 a2  "
+                    "a3 a3 a4 a4 a5 a5";
+                
+                    &__grid-card{
+
+                        display: flex;
+                        justify-content: space-between;
+                        flex-direction: column;
+                        margin: 8px;
+                        position: relative;
+                        cursor: pointer;
+                        border-radius: 16px;
+                        transition: all .2s linear;
+
+                        &__pill-button {
+                            display: flex;
+                            background-color: antiquewhite;
+                            margin: 10px 14px;
+                            padding: 5px 10px;
+                            font-family: Mulish, sans-serif;
+                            text-transform: uppercase;
+                            font-size: 8px;
+                            font-weight: bold;
+                            letter-spacing: 2px;
+                            border-radius: 16px;
+                        }
+        
+                        &__link-to-author {
+                            font-size: 14px;
+                            font-family: Mulish, sans-serif;
+                            padding-left: 14px;
+                            color: beige;
+                        }
+        
+                       &__title {
+                            font-family: Corben, serif;
+                           // font-size: 29px;
+                            padding-left: 14px;
+                            color: beige;
+                            height: 40px;
+                            text-decoration: none;
+                            text-decoration-line: none;
+                        }
+                }
+                &__grid-card:nth-child(1) {
+                    grid-area: a1;
+                    width: 589px;
+                    height: 589px;
+                    padding: 20px 30px 25px 30px;
+                    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) ,url("../../img/grid_imgs/problems_grid_1.jpeg");
+                    background-size: cover;
+                    position: relative;
+                    overflow: hidden;
+    
+                    .main-container__pinned-section__wrap__pinned-element__content__link-to-author {
+                        padding-top: 150px;
+                    }
+    
+                    .main-container__pinned-section__wrap__pinned-element__content__pinned-title {
+                        margin: 0;
+                    }
+    
+                    &:hover {
+                        transform: translateY(-4px);
+                        
+                    }
+                }
+                &__grid-card:nth-child(2) {
+                    grid-area: a2;
+                    width: 589px;
+                    height: 589px;
+                    padding: 20px 30px 25px 30px;
+                    background: linear-gradient(rgba(25, 6, 237, 0.8), rgba(25, 6, 237,0.8)) ,url(../../img/pinned/open_space_for_more.jpeg);
+                    background-size: cover;
+                    position: relative;
+                    overflow: hidden;
+                    .main-container__pinned-section__wrap__pinned-element__content__link-to-author {
+                        padding-top: 40px;
+                        color: rgb(229, 223, 223)
+                    }
+    
+                    .main-container__pinned-section__wrap__pinned-element__content__pinned-title {
+                        padding-bottom: 40px;
+                        font-size: 19px;
+                        color: rgb(229, 223, 223)
+                    }
+    
+                    &:hover {
+                        transform: translateY(-4px);
+                    }
+                }
+    
+                &__grid-card:nth-child(3) {
+                    grid-area: a3;
+                    width: 384px;
+                    height: 465px;
+                    padding: 20px 30px 25px 30px;
+                    background-color: #ffb469;
+                    background-size: cover;
+                    position: relative;
+                    overflow: hidden;
+                    .main-container__pinned-section__wrap__pinned-element__content__link-to-author {
+                        padding-top: 40px;
+                        color: rgb(68, 67, 67)
+                    }
+    
+                    .main-container__pinned-section__wrap__pinned-element__content__pinned-title {
+                        padding-bottom: 40px;
+                        font-size: 19px;
+                        color: rgb(68, 67, 67)
+                    }
+                    &:hover {
+                        transform: translateY(-4px);
+                    }
+    
+                }
+    
+                &__grid-card:nth-child(4) {
+                    grid-area: a4;
+                    width: 384px;
+                    height: 465px;
+                    padding: 20px 30px 25px 30px;
+                    background: linear-gradient(rgba(237, 6, 202, 0.8), rgba(237, 6, 202, 0.8)) ,url(../../img/pinned/space_for_mind.jpeg);
+                    background-size: cover;
+                    position: relative;
+                    overflow: hidden;
+                    .main-container__pinned-section__wrap__pinned-element__content__link-to-author {
+                        padding-top: 40px;
+                        color: rgb(229, 223, 223)
+                    }
+    
+                    .main-container__pinned-section__wrap__pinned-element__content__pinned-title {
+                        padding-bottom: 40px;
+                        font-size: 19px;
+                        color: rgb(229, 223, 223)
+                    }
+                    &:hover {
+                        transform: translateY(-4px);
+                    }
+                }
+    
+                &__grid-card:nth-child(5) {
+                    grid-area: a5;
+                    width: 384px;
+                    height: 465px;
+                    padding: 20px 30px 25px 30px;
+                    background: linear-gradient(rgba(255, 192, 203, 0.8), rgba(255, 192, 203, 0.8)) ,url(../../img/pinned/sea_is_calm.jpeg);
+                    background-size: cover;
+                    position: relative;
+                    overflow: hidden;
+                    .main-container__pinned-section__wrap__pinned-element__content__link-to-author {
+                        padding-top: 40px;
+                        margin: 0;
+                        color: rgb(68, 67, 67)
+                    }
+    
+                    .main-container__pinned-section__wrap__pinned-element__content__pinned-title {
+                        padding-bottom: 0px;
+                        font-size: 19px;
+                        color: rgb(68, 67, 67)
+                    }
+                    &:hover {
+                        transform: translateY(-4px);
+                    }
+                }
+            }
+        }
+        &__button-more{
+            display: flex;
+            width: 1230px;
+            height: 86px;
+            padding: 32 40 32 40;
+            border-radius: 16px;
+            background-color: rgb(69,69,95);
+            margin-bottom: 30px;
+            justify-content: center;
+text-align: center;
+            font-family: Mulish,sans-serif;
+            font-weight: 800;
+            font-size: 11px;
+            letter-spacing: 2px;
+            line-height: 16,5px;
+            color: antiquewhite;
+            text-transform: uppercase;
+
+            &:hover{
+                background-color: #ffb469;
+                scale: (1,1);
+            }
+
         }
     }
+
 }
