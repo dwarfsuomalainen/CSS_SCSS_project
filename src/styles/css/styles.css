@@ -48,16 +48,12 @@
 
 .footer {
   z-index: 100;
-  position: relative;
-  padding-top: 60px;
   display: flex;
   flex-direction: column;
-  height: 200px;
-  width: 1069px;
 }
-.footer__nav {
-  width: 660px;
-  height: 30px;
+.footer a {
+  text-decoration: none;
+  text-decoration-line: none;
 }
 .footer__nav ul {
   overflow: hidden;
@@ -66,7 +62,7 @@
 .footer__nav li :hover:before {
   content: "";
   position: absolute;
-  top: 60px;
+  top: 5px;
   background: grey;
   width: 6px;
   height: 6px;
@@ -77,11 +73,8 @@
   list-style: none;
 }
 .footer__nav li a {
-  display: block;
+  display: flex;
   padding-left: 16px;
-  text-align: center;
-  text-decoration: none;
-  text-decoration-line: none;
   font-size: 12px;
   font-family: Mulish, sans-serif;
   font-weight: 400;
@@ -92,23 +85,18 @@
 }
 .footer__icons {
   display: flex;
-  position: relative;
-  width: 376px;
-  height: 26px;
+  flex-wrap: wrap;
   color: antiquewhite;
 }
 .footer__footer-copyright {
-  width: 660px;
-  height: 13px;
   display: flex;
-  justify-content: space-between;
+  padding-left: 55px;
   font-family: Mulish, sans-serif;
   font-weight: 200;
   font-size: 11px;
   letter-spacing: 2px;
   color: antiquewhite;
   text-transform: uppercase;
-  text-decoration: none;
 }
 
 .main-container {
@@ -116,8 +104,6 @@
   align-items: center;
   flex-direction: column;
   padding-top: 60px;
-  margin-left: 3em;
-  margin-right: 3em;
 }
 .main-container__header {
   display: block;
@@ -342,45 +328,42 @@
 .main-container__pinned-section__wrap__pinned-element:nth-child(5):hover {
   transform: translateY(-4px);
 }
-.main-container__global {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .main-container__global__big-cards {
-  position: relative;
   cursor: pointer;
   border-radius: 16px;
   transition: all 0.2s linear;
-  display: flex;
-  flex-direction: column;
 }
 .main-container__global__big-cards__big-card {
   cursor: pointer;
   border-radius: 16px;
   transition: all 0.5s;
+}
+.main-container__global__big-cards__big-card__content {
+  padding-left: 200px;
+  padding-right: 200px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
-.main-container__global__big-cards__big-card svg {
-  width: 20px;
-  height: 20px;
+.main-container__global__big-cards__big-card__content svg {
+  width: 40px;
+  height: 40px;
   fill: beige;
 }
-.main-container__global__big-cards__big-card a {
+.main-container__global__big-cards__big-card__content a {
   text-decoration: none;
   text-decoration-line: none;
   color: beige;
 }
-.main-container__global__big-cards__big-card__pill-button {
+.main-container__global__big-cards__big-card__content__pill_buttons {
   display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  margin-top: 180px;
+}
+.main-container__global__big-cards__big-card__content__pill_buttons__pill_button {
+  margin-right: 5px;
+  padding: 5px;
   justify-content: space-between;
-  align-items: stretch;
-  width: max-content;
-  padding: 5px 10px;
-  margin: 10px;
   font-family: Mulish, sans-serif;
   text-transform: uppercase;
   font-size: 8px;
@@ -389,66 +372,83 @@
   letter-spacing: 2px;
   border-radius: 16px;
 }
-.main-container__global__big-cards__big-card__link-to-author {
+.main-container__global__big-cards__big-card__content__link-to-author {
   font-size: 14px;
   font-family: Mulish, sans-serif;
-  padding-left: 14px;
   color: beige;
-  left: 0px;
+  position: relative;
+  align-self: flex-start;
+  padding-top: 20px;
 }
-.main-container__global__big-cards__big-card__article {
+.main-container__global__big-cards__big-card__content__article {
   font-size: 14px;
   font-family: Mulish, sans-serif;
-  padding-left: 14px;
   color: beige;
-  left: 0px;
+  position: relative;
 }
-.main-container__global__big-cards__big-card__title {
+.main-container__global__big-cards__big-card__content__title {
   font-family: Corben, serif;
-  padding-left: 14px;
+  font-size: 40px;
   color: beige;
   height: 40px;
+  position: relative;
+  height: 180px;
+  margin-bottom: 20px;
 }
 .main-container__global__big-cards__big-card:nth-child(1) {
   width: 1204px;
-  height: 673px;
+  height: 573px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/big_cards_imgs/perfect_place.jpeg);
   background-size: cover;
   background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
   margin-bottom: 40px;
+}
+.main-container__global__big-cards__big-card:nth-child(1) .main-container__global__big-cards__big-card__content__title {
+  margin-top: 20px;
+}
+.main-container__global__big-cards__big-card:nth-child(1) .main-container__global__big-cards__big-card__content__link-to-author {
+  margin-top: -40px;
 }
 .main-container__global__big-cards__big-card:nth-child(1):hover {
   scale: 1.1;
   background-size: 105%;
 }
 .main-container__global__big-cards__big-card:nth-child(2) {
-  display: flex;
   width: 1204px;
-  height: 808px;
+  height: 708px;
   background: linear-gradient(rgb(252, 160, 3), rgba(252, 160, 3, 0.5)), url(../../img/big_cards_imgs/i_work_best.jpeg);
   background-size: cover;
   background-position: center;
-  position: relative;
   overflow: hidden;
   margin-bottom: 40px;
+}
+.main-container__global__big-cards__big-card:nth-child(2) .main-container__global__big-cards__big-card__content__title {
+  margin-top: 20px;
+}
+.main-container__global__big-cards__big-card:nth-child(2) .main-container__global__big-cards__big-card__content__article {
+  margin-top: -20px;
+}
+.main-container__global__big-cards__big-card:nth-child(2) .main-container__global__big-cards__big-card__content__link-to-author {
+  margin-top: 20px;
 }
 .main-container__global__big-cards__big-card:nth-child(2):hover {
   background-size: 105%;
 }
 .main-container__global__big-cards__big-card:nth-child(3) {
-  display: flex;
   width: 1204px;
   height: 673px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/big_cards_imgs/the_perfect_place.jpeg);
   background-size: cover;
   background-position: center;
-  position: relative;
   overflow: hidden;
   margin-bottom: 40px;
+}
+.main-container__global__big-cards__big-card:nth-child(3) .main-container__global__big-cards__big-card__content__title {
+  margin-top: 20px;
+}
+.main-container__global__big-cards__big-card:nth-child(3) .main-container__global__big-cards__big-card__content__link-to-author {
+  margin-top: 20px;
 }
 .main-container__global__big-cards__big-card:nth-child(3):hover {
   background-size: 105%;
@@ -479,7 +479,8 @@
 }
 .main-container__global__grid__grid-cards__grid-card {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: stretch;
   flex-direction: column;
   margin: 8px;
   position: relative;
@@ -496,6 +497,8 @@
   font-size: 14px;
   font-family: Mulish, sans-serif;
   padding-left: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: beige;
   left: 0px;
 }
@@ -514,7 +517,7 @@
   letter-spacing: 2px;
   border-radius: 16px;
 }
-.main-container__global__grid__grid-cards__grid-card__link-to-author {
+.main-container__global__grid__grid-cards__grid-card__author {
   font-size: 14px;
   font-family: Mulish, sans-serif;
   padding-left: 14px;
@@ -535,7 +538,6 @@
   height: 509px;
   background: linear-gradient(rgba(159, 8, 241, 0.5), rgba(159, 8, 241, 0.5)), url("../../img/grid_imgs/problems_grid_1.jpeg");
   background-size: cover;
-  position: relative;
   overflow: hidden;
 }
 .main-container__global__grid__grid-cards__grid-card:nth-child(1) .main-container__pinned-section__wrap__pinned-element__content__link-to-author {
@@ -574,7 +576,6 @@
   height: 376px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/grid_imgs/being_unique.jpeg");
   background-size: cover;
-  position: relative;
   overflow: hidden;
 }
 .main-container__global__grid__grid-cards__grid-card:nth-child(3) .main-container__pinned-section__wrap__pinned-element__content__link-to-author {
@@ -595,7 +596,6 @@
   height: 376px;
   background: linear-gradient(rgba(255, 192, 203, 0.8), rgba(255, 192, 203, 0.8)), url(../../img/grid_imgs/anyone_can.jpeg);
   background-size: cover;
-  position: relative;
   overflow: hidden;
 }
 .main-container__global__grid__grid-cards__grid-card:nth-child(4) .main-container__pinned-section__wrap__pinned-element__content__link-to-author {
@@ -616,7 +616,6 @@
   height: 376px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/grid_imgs/change-is.jpeg");
   background-size: cover;
-  position: relative;
   overflow: hidden;
 }
 .main-container__global__grid__grid-cards__grid-card:nth-child(5) .main-container__pinned-section__wrap__pinned-element__content__link-to-author {
