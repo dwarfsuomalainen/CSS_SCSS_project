@@ -3,7 +3,10 @@
 @import '../scss/footer';
 @import '../scss/main-container';
 @import url(https://fonts.googleapis.com/css?family=Mulish);
-@import url(https://fonts.googleapis.com/css?family=Corben);
+@font-face {
+    font-family: 'Corben';
+    src:  url('../../fonts/corben.woff2') format('woff2'),
+  }
 
 body{
 background-color: $background-color;
