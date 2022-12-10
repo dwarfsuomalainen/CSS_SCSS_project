@@ -726,6 +726,7 @@
   line-height: 16, 5px;
   color: antiquewhite;
   text-transform: uppercase;
+  -webkit-transition: all 0.3s ease-in-out;
 }
 .main-container__global__button-more:hover {
   background-color: #ffb469;
@@ -801,6 +802,7 @@
   color: rgb(235, 235, 235);
   text-transform: uppercase;
   border: none;
+  -webkit-transition: all 0.3s ease-in-out;
 }
 .main-container__global__form__subscribe:hover {
   background-color: #ffb469;
