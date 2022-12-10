@@ -191,7 +191,7 @@
 }
 .main-container__pinned-section__wrap__pinned-element {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: column;
   margin: 8px;
   position: relative;
@@ -199,13 +199,18 @@
   border-radius: 16px;
   transition: all 0.2s linear;
 }
+.main-container__pinned-section__wrap__pinned-element h3 {
+  line-height: 170%;
+}
 .main-container__pinned-section__wrap__pinned-element__content {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  width: 308px;
 }
 .main-container__pinned-section__wrap__pinned-element__content__pill-button {
+  margin-top: 20px;
+  margin-left: 14px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -214,7 +219,6 @@
   font-family: Mulish, sans-serif;
   text-transform: uppercase;
   font-size: 8px;
-  border: grey solid 1px;
   letter-spacing: 2px;
   border-radius: 16px;
 }
@@ -240,6 +244,10 @@
   position: relative;
   overflow: hidden;
 }
+.main-container__pinned-section__wrap__pinned-element:nth-child(1) .main-container__pinned-section__wrap__pinned-element__content__pill-button {
+  background-color: rgb(235, 235, 235);
+  margin-top: -130px;
+}
 .main-container__pinned-section__wrap__pinned-element:nth-child(1) .main-container__pinned-section__wrap__pinned-element__content__link-to-author {
   padding-top: 150px;
   margin: 0;
@@ -252,21 +260,25 @@
 }
 .main-container__pinned-section__wrap__pinned-element:nth-child(2) {
   grid-area: a2;
-  width: 348px;
-  height: 155px;
-  padding: 20px 30px 25px 30px;
+  width: 368px;
+  height: 200px;
   background: linear-gradient(rgba(25, 6, 237, 0.8), rgba(25, 6, 237, 0.8)), url(../../img/pinned/open_space_for_more.jpeg);
   background-size: cover;
   position: relative;
   overflow: hidden;
 }
+.main-container__pinned-section__wrap__pinned-element:nth-child(2) .main-container__pinned-section__wrap__pinned-element__content__pill-button {
+  background-color: rgb(235, 235, 235);
+}
+.main-container__pinned-section__wrap__pinned-element:nth-child(2) .main-container__pinned-section__wrap__pinned-element__content {
+  padding-left: 10px;
+  margin-top: -40px;
+}
 .main-container__pinned-section__wrap__pinned-element:nth-child(2) .main-container__pinned-section__wrap__pinned-element__content__link-to-author {
-  padding-top: 40px;
-  margin: 0;
   color: rgb(229, 223, 223);
+  padding-top: 20px;
 }
 .main-container__pinned-section__wrap__pinned-element:nth-child(2) .main-container__pinned-section__wrap__pinned-element__content__pinned-title {
-  padding-bottom: 40px;
   font-size: 19px;
   color: rgb(229, 223, 223);
 }
@@ -275,21 +287,28 @@
 }
 .main-container__pinned-section__wrap__pinned-element:nth-child(3) {
   grid-area: a3;
-  width: 348px;
-  height: 155px;
-  padding: 20px 30px 25px 30px;
+  display: flex;
+  flex-direction: column;
+  width: 368px;
+  height: 200px;
   background-color: #ffb469;
   background-size: cover;
   position: relative;
   overflow: hidden;
 }
+.main-container__pinned-section__wrap__pinned-element:nth-child(3) .main-container__pinned-section__wrap__pinned-element__content__pill-button {
+  background-color: rgb(68, 67, 67);
+  color: rgb(235, 235, 235);
+}
+.main-container__pinned-section__wrap__pinned-element:nth-child(3) .main-container__pinned-section__wrap__pinned-element__content {
+  padding-left: 10px;
+  margin-top: -40px;
+}
 .main-container__pinned-section__wrap__pinned-element:nth-child(3) .main-container__pinned-section__wrap__pinned-element__content__link-to-author {
-  padding-top: 40px;
-  margin: 0;
   color: rgb(68, 67, 67);
+  padding-top: 20px;
 }
 .main-container__pinned-section__wrap__pinned-element:nth-child(3) .main-container__pinned-section__wrap__pinned-element__content__pinned-title {
-  padding-bottom: 40px;
   font-size: 19px;
   color: rgb(68, 67, 67);
 }
@@ -298,44 +317,54 @@
 }
 .main-container__pinned-section__wrap__pinned-element:nth-child(4) {
   grid-area: a4;
-  width: 348px;
-  height: 155px;
-  padding: 20px 30px 25px 30px;
+  width: 368px;
+  height: 200px;
   background: linear-gradient(rgba(237, 6, 202, 0.8), rgba(237, 6, 202, 0.8)), url(../../img/pinned/space_for_mind.jpeg);
   background-size: cover;
   position: relative;
   overflow: hidden;
 }
+.main-container__pinned-section__wrap__pinned-element:nth-child(4) .main-container__pinned-section__wrap__pinned-element__content__pill-button {
+  background-color: rgb(235, 235, 235);
+}
+.main-container__pinned-section__wrap__pinned-element:nth-child(4) .main-container__pinned-section__wrap__pinned-element__content {
+  padding-left: 10px;
+  margin-top: -40px;
+}
 .main-container__pinned-section__wrap__pinned-element:nth-child(4) .main-container__pinned-section__wrap__pinned-element__content__link-to-author {
-  padding-top: 40px;
-  margin: 0;
-  color: rgb(229, 223, 223);
+  color: rgb(235, 235, 235);
+  padding-top: 20px;
 }
 .main-container__pinned-section__wrap__pinned-element:nth-child(4) .main-container__pinned-section__wrap__pinned-element__content__pinned-title {
-  padding-bottom: 40px;
   font-size: 19px;
-  color: rgb(229, 223, 223);
+  color: rgb(235, 235, 235);
 }
 .main-container__pinned-section__wrap__pinned-element:nth-child(4):hover {
   transform: translateY(-4px);
 }
 .main-container__pinned-section__wrap__pinned-element:nth-child(5) {
   grid-area: a5;
-  width: 348px;
-  height: 155px;
-  padding: 20px 30px 25px 30px;
+  width: 368px;
+  height: 200px;
   background: linear-gradient(rgba(255, 192, 203, 0.8), rgba(255, 192, 203, 0.8)), url(../../img/pinned/sea_is_calm.jpeg);
   background-size: cover;
   position: relative;
   overflow: hidden;
 }
+.main-container__pinned-section__wrap__pinned-element:nth-child(5) .main-container__pinned-section__wrap__pinned-element__content__pill-button {
+  background-color: rgb(68, 67, 67);
+  color: rgb(235, 235, 235);
+}
+.main-container__pinned-section__wrap__pinned-element:nth-child(5) .main-container__pinned-section__wrap__pinned-element__content {
+  padding-left: 10px;
+  margin-top: -40px;
+}
 .main-container__pinned-section__wrap__pinned-element:nth-child(5) .main-container__pinned-section__wrap__pinned-element__content__link-to-author {
-  padding-top: 40px;
-  margin: 0;
   color: rgb(68, 67, 67);
+  padding-top: 20px;
+  margin-bottom: -20px;
 }
 .main-container__pinned-section__wrap__pinned-element:nth-child(5) .main-container__pinned-section__wrap__pinned-element__content__pinned-title {
-  padding-bottom: 0px;
   font-size: 19px;
   color: rgb(68, 67, 67);
 }
@@ -351,6 +380,8 @@
   cursor: pointer;
   border-radius: 16px;
   transition: all 0.5s;
+  background-size: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
 }
 .main-container__global__big-cards__big-card__content {
   padding-left: 200px;
@@ -417,6 +448,8 @@
   background-position: center;
   overflow: hidden;
   margin-bottom: 40px;
+  background-size: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
 }
 .main-container__global__big-cards__big-card:nth-child(1) .main-container__global__big-cards__big-card__content__title {
   margin-top: 20px;
@@ -426,7 +459,7 @@
 }
 .main-container__global__big-cards__big-card:nth-child(1):hover {
   scale: 1.1;
-  background-size: 105%;
+  background-size: 107%;
 }
 .main-container__global__big-cards__big-card:nth-child(2) {
   width: 1204px;
@@ -436,6 +469,8 @@
   background-position: center;
   overflow: hidden;
   margin-bottom: 40px;
+  background-size: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
 }
 .main-container__global__big-cards__big-card:nth-child(2) .main-container__global__big-cards__big-card__content__title {
   margin-top: 20px;
@@ -449,7 +484,7 @@
   margin-top: 20px;
 }
 .main-container__global__big-cards__big-card:nth-child(2):hover {
-  background-size: 105%;
+  background-size: 107%;
 }
 .main-container__global__big-cards__big-card:nth-child(3) {
   width: 1204px;
@@ -459,6 +494,8 @@
   background-position: center;
   overflow: hidden;
   margin-bottom: 40px;
+  background-size: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
 }
 .main-container__global__big-cards__big-card:nth-child(3) .main-container__global__big-cards__big-card__content__title {
   margin-top: 20px;
@@ -467,7 +504,7 @@
   margin-top: 20px;
 }
 .main-container__global__big-cards__big-card:nth-child(3):hover {
-  background-size: 105%;
+  background-size: 107%;
 }
 .main-container__global__header {
   display: flex;
@@ -559,6 +596,8 @@
   background: linear-gradient(rgba(190, 136, 219, 0.844), rgba(178, 134, 202, 0.853)), url("../../img/grid_imgs/problems_grid_1.jpeg");
   background-size: cover;
   overflow: hidden;
+  background-size: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
 }
 .main-container__global__grid__grid-cards__grid-card:nth-child(1) .main-container__global__grid__grid-cards__grid-card__content__pill-buttons__pill-button {
   color: rgb(51, 51, 51);
@@ -573,7 +612,6 @@
   color: rgb(68, 67, 67);
 }
 .main-container__global__grid__grid-cards__grid-card:nth-child(1):hover {
-  transition: background-size 0.4s ease-in;
   background-size: 105%;
 }
 .main-container__global__grid__grid-cards__grid-card:nth-child(2) {
@@ -584,6 +622,8 @@
   background-size: cover;
   position: relative;
   overflow: hidden;
+  background-size: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
 }
 .main-container__global__grid__grid-cards__grid-card:nth-child(2) .main-container__global__grid__grid-cards__grid-card__content__pill-buttons__pill-button {
   color: rgb(51, 51, 51);
@@ -597,6 +637,9 @@
 .main-container__global__grid__grid-cards__grid-card:nth-child(2) .main-container__global__grid__grid-cards__grid-card__content__title a {
   color: rgb(68, 67, 67);
 }
+.main-container__global__grid__grid-cards__grid-card:nth-child(2):hover {
+  background-size: 105%;
+}
 .main-container__global__grid__grid-cards__grid-card:nth-child(3) {
   grid-area: a3;
   width: 302px;
@@ -604,6 +647,8 @@
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/grid_imgs/being_unique.jpeg");
   background-size: cover;
   overflow: hidden;
+  background-size: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
 }
 .main-container__global__grid__grid-cards__grid-card:nth-child(3) .main-container__global__grid__grid-cards__grid-card__content__pill-buttons__pill-button {
   border: rgb(255, 255, 255) solid 1px;
@@ -614,6 +659,9 @@
 .main-container__global__grid__grid-cards__grid-card:nth-child(3) .main-container__global__grid__grid-cards__grid-card__content__title {
   font-size: 16px;
 }
+.main-container__global__grid__grid-cards__grid-card:nth-child(3):hover {
+  background-size: 105%;
+}
 .main-container__global__grid__grid-cards__grid-card:nth-child(4) {
   grid-area: a4;
   width: 302px;
@@ -621,6 +669,8 @@
   background: linear-gradient(rgba(255, 192, 203, 0.8), rgba(255, 192, 203, 0.8)), url(../../img/grid_imgs/anyone_can.jpeg);
   background-size: cover;
   overflow: hidden;
+  background-size: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
 }
 .main-container__global__grid__grid-cards__grid-card:nth-child(4) .main-container__global__grid__grid-cards__grid-card__content__pill-buttons__pill-button {
   color: rgb(51, 51, 51);
@@ -634,6 +684,9 @@
 .main-container__global__grid__grid-cards__grid-card:nth-child(4) .main-container__global__grid__grid-cards__grid-card__content__title a {
   color: rgb(68, 67, 67);
 }
+.main-container__global__grid__grid-cards__grid-card:nth-child(4):hover {
+  background-size: 105%;
+}
 .main-container__global__grid__grid-cards__grid-card:nth-child(5) {
   grid-area: a5;
   width: 302px;
@@ -641,6 +694,8 @@
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/grid_imgs/change-is.jpeg");
   background-size: cover;
   overflow: hidden;
+  background-size: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
 }
 .main-container__global__grid__grid-cards__grid-card:nth-child(5) .main-container__global__grid__grid-cards__grid-card__content__pill-buttons__pill-button {
   border: rgb(255, 255, 255) solid 1px;
@@ -650,6 +705,9 @@
 }
 .main-container__global__grid__grid-cards__grid-card:nth-child(5) .main-container__global__grid__grid-cards__grid-card__content__title {
   font-size: 16px;
+}
+.main-container__global__grid__grid-cards__grid-card:nth-child(5):hover {
+  background-size: 105%;
 }
 .main-container__global__button-more {
   display: flex;
@@ -692,17 +750,26 @@
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 0.15em;
-  animation: typing 3.5s steps(38, end), blink-caret 0.75s step-end infinite;
+  animation: typing 3.5s steps(38, end), blink-cursor 0.75s step-end infinite;
 }
 @keyframes typing {
-  from {
+  0% {
     width: 0ch;
   }
-  to {
+  50% {
     width: 26ch;
   }
+  55% {
+    width: 26ch;
+  }
+  65% {
+    width: 26ch;
+  }
+  100% {
+    width: 0ch;
+  }
 }
-@keyframes blink-caret {
+@keyframes blink-cursor {
   from, to {
     border-color: transparent;
   }
