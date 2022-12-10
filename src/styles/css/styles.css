@@ -47,9 +47,11 @@
 }
 
 .footer {
-  z-index: 100;
+  width: 1204px;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+  align-self: center;
 }
 .footer a {
   text-decoration: none;
@@ -654,7 +656,7 @@
   position: relative;
   align-items: center;
   justify-content: center;
-  width: 1230px;
+  width: 800px;
   height: 86px;
   border-radius: 16px;
   background-color: rgb(69, 69, 95);
@@ -662,7 +664,7 @@
   font-family: Mulish, sans-serif;
   font-weight: 800;
   font-size: 11px;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   line-height: 16, 5px;
   color: antiquewhite;
   text-transform: uppercase;
@@ -672,12 +674,59 @@
   scale: 1, 1;
 }
 .main-container__global__form {
+  margin-top: 160px;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 700px;
-  height: 380px;
+  margin-bottom: 40px;
+  padding-bottom: 160px;
+}
+.main-container__global__form span {
+  height: 60px;
+  padding: 20px;
+  margin-top: 60px;
+}
+.main-container__global__form__title {
+  text-align: center;
+  font-family: Corben, serif;
+  font-size: 29px;
+  padding-left: 14px;
+  color: rgb(235, 235, 235);
+  height: 40px;
+}
+.main-container__global__form__subscribe {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 86px;
+  border-radius: 16px;
+  background-color: rgb(69, 69, 95);
+  font-family: Mulish, sans-serif;
+  font-size: 11px;
+  letter-spacing: 4px;
+  color: rgb(235, 235, 235);
+  text-transform: uppercase;
+  border: none;
+}
+.main-container__global__form__subscribe:hover {
+  background-color: #ffb469;
+}
+.main-container__global__form__input {
+  padding: 20px;
+  color: rgb(235, 235, 235);
+  margin: 30px;
+  width: 260px;
+  font-size: 18px;
+  font-family: Mulish, sans-serif;
+  background: transparent;
+  border: none;
+  text-align: center;
+  border-bottom: 1px solid rgb(235, 235, 235);
+  outline: none;
+  transition: width 0.3s ease-in;
 }
 
 @font-face {

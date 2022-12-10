@@ -1,7 +1,10 @@
 .footer{
-    z-index: 100;
+    width: 1204px;
     display: flex;
     flex-direction: column;
+margin: 0 auto;
+    align-self: center;
+
 
     a {
         text-decoration: none;

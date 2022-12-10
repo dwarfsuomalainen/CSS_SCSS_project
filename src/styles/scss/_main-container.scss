@@ -478,7 +478,7 @@
                     border-radius: 16px;
                     background-size: 100%;
                     transition: background-size 0.4s ease-in;
-                    
+
                     &:hover {
                         transition: background-size 0.4s ease-in;
                         background-size: 105%;
@@ -608,9 +608,7 @@
                         }
                     }
 
-                    &:hover {
-
-                    }
+                    &:hover {}
                 }
 
                 &__grid-card:nth-child(3) {
@@ -636,9 +634,7 @@
 
                     }
 
-                    &:hover {
-
-                    }
+                    &:hover {}
 
                 }
 
@@ -668,9 +664,7 @@
                         }
                     }
 
-                    &:hover {
-
-                    }
+                    &:hover {}
                 }
 
                 &__grid-card:nth-child(5) {
@@ -680,9 +674,11 @@
                     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/grid_imgs/change-is.jpeg");
                     background-size: cover;
                     overflow: hidden;
+
                     .main-container__global__grid__grid-cards__grid-card__content__pill-buttons__pill-button {
                         border: rgb(255, 255, 255) solid 1px;
                     }
+
                     .main-container__global__grid__grid-cards__grid-card__content__author {
                         padding-top: 20px;
                     }
@@ -693,9 +689,7 @@
                         font-size: 16px;
                     }
 
-                    &:hover {
-
-                    }
+                    &:hover {}
                 }
             }
         }
@@ -705,7 +699,7 @@
             position: relative;
             align-items: center;
             justify-content: center;
-            width: 1230px;
+            width: 800px;
             height: 86px;
             border-radius: 16px;
             background-color: rgb(69, 69, 95);
@@ -713,7 +707,7 @@
             font-family: Mulish, sans-serif;
             font-weight: 800;
             font-size: 11px;
-            letter-spacing: 2px;
+            letter-spacing: 4px;
             line-height: 16, 5px;
             color: antiquewhite;
             text-transform: uppercase;
@@ -726,14 +720,65 @@
         }
 
         &__form {
+            margin-top: 160px;
             display: flex;
-            justify-content: center;
             align-items: center;
             flex-direction: column;
             width: 700px;
-            height: 380px;
+            margin-bottom: 40px;
+            padding-bottom: 160px;
+
+            span {
+                height: 60px;
+                padding: 20px;
+                margin-top: 60px;
+            }
+
+            &__title {
+                
+                text-align: center;
+                font-family: Corben, serif;
+                font-size: 29px;
+                padding-left: 14px;
+                color: $title-color;
+                height: 40px;
+
+            }
+
+            &__subscribe {
+                display: flex;
+                position: relative;
+                align-items: center;
+                justify-content: center;
+                width: 160px;
+                height: 86px;
+                border-radius: 16px;
+                background-color: rgb(69, 69, 95);
+                font-family: Mulish, sans-serif;
+                font-size: 11px;
+                letter-spacing: 4px;
+                color: $title-color;
+                text-transform: uppercase;
+                border: none;
+                &:hover {
+                    background-color: #ffb469;
+                }
+            }
+            &__input {
+                padding: 20px;
+                color: $title-color;
+                margin: 30px;
+                width: 260px;
+                font-size: 18px;
+                font-family: Mulish, sans-serif;
+                background: transparent;
+                border: none;
+                text-align: center;
+                border-bottom: 1px solid $title-color;
+                outline: none;
+                transition: width 0.3s ease-in;
+            }
         }
 
     }
-
 }
