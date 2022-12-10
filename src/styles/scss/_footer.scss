@@ -3,9 +3,10 @@
     display: flex;
     flex-direction: column;
 
-    & a {
+    a {
         text-decoration: none;
         text-decoration-line: none;
+        color: gray;
     }
     &__nav{
 
@@ -35,10 +36,12 @@
 
             display: flex;
             padding-left: 16px;
-            font-size: 12px;
+            font-size: 11px;
             font-family: Mulish, sans-serif;
             font-weight: 400;
             color: rgb(235, 235, 235);
+            text-decoration: none;
+            text-decoration-line: none;
         }
 
         li a:hover {
@@ -50,18 +53,29 @@
 
     &__icons {
         display: flex;
-        flex-wrap: wrap;
 
+        justify-content: flex-end;
+        align-items: flex-end;
         color: antiquewhite;
+        a {
+            height: 20px;
+            width: 20px;
+            padding-right: 20px;
+            text-decoration: none;
+            text-decoration-line: none;
+            fill: gray;
+        }
     }
     &__footer-copyright {
+
+
         display: flex;
         padding-left: 55px;
         font-family: Mulish, sans-serif;
         font-weight: 200;
-        font-size: 11px;
+        font-size: 8px;
         letter-spacing: 2px;
-        color: antiquewhite;
+        color: gray;
         text-transform: uppercase;
 
     }
