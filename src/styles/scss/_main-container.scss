@@ -127,14 +127,14 @@
                         font-size: 14px;
                         font-family: Mulish, sans-serif;
                         padding-left: 14px;
-                        color: beige;
+                        color: $title-color;
                     }
 
                     &__pinned-title {
                         font-family: Corben, serif;
                         // font-size: 29px;
                         padding-left: 14px;
-                        color: beige;
+                        color: $title-color;
                         height: 40px;
                     }
 
@@ -297,10 +297,10 @@
                     flex-direction: column;
 
                     & svg {
-                    
+
                         width: 40px;
                         height: 40px;
-                        fill: beige;
+                        fill: $title-color;
                     }
 
                     & svg:hover {}
@@ -308,16 +308,16 @@
                     & a {
                         text-decoration: none;
                         text-decoration-line: none;
-                        color: beige;
+                        color: $title-color;
 
                     }
 
                     &__pill_buttons {
                         display: flex;
-                        justify-content:flex-start;
+                        justify-content: flex-start;
                         align-content: flex-start;
                         margin-top: 180px;
-                        
+
 
                         &__pill_button {
                             margin-right: 5px;
@@ -326,7 +326,7 @@
                             font-family: Mulish, sans-serif;
                             text-transform: uppercase;
                             font-size: 8px;
-                            color: beige;
+                            color: $title-color;
                             border: grey solid 1px;
                             letter-spacing: 2px;
                             border-radius: 16px;
@@ -336,7 +336,7 @@
                     &__link-to-author {
                         font-size: 14px;
                         font-family: Mulish, sans-serif;
-                        color: beige;
+                        color: $title-color;
                         position: relative;
                         align-self: flex-start;
                         padding-top: 20px;
@@ -346,14 +346,14 @@
                     &__article {
                         font-size: 14px;
                         font-family: Mulish, sans-serif;
-                        color: beige;
+                        color: $title-color;
                         position: relative;
                     }
 
                     &__title {
                         font-family: Corben, serif;
                         font-size: 40px;
-                        color: beige;
+                        color: $title-color;
                         height: 40px;
                         position: relative;
                         height: 180px;
@@ -369,12 +369,15 @@
                     background-position: center;
                     overflow: hidden;
                     margin-bottom: 40px;
-                    .main-container__global__big-cards__big-card__content__title{
+
+                    .main-container__global__big-cards__big-card__content__title {
                         margin-top: 20px;
                     }
-                    .main-container__global__big-cards__big-card__content__link-to-author{
+
+                    .main-container__global__big-cards__big-card__content__link-to-author {
                         margin-top: -40px;
                     }
+
                     &:hover {
                         scale: (1.1);
                         background-size: 105%;
@@ -390,15 +393,21 @@
                     background-position: center;
                     overflow: hidden;
                     margin-bottom: 40px;
-                    .main-container__global__big-cards__big-card__content__title{
+
+                    .main-container__global__big-cards__big-card__content__title {
                         margin-top: 20px;
                     }
-                    .main-container__global__big-cards__big-card__content__article{
+
+                    .main-container__global__big-cards__big-card__content__article {
                         margin-top: -20px;
+                        font-size: 18px;
+                        width: 600px;
                     }
-                    .main-container__global__big-cards__big-card__content__link-to-author{
+
+                    .main-container__global__big-cards__big-card__content__link-to-author {
                         margin-top: 20px;
                     }
+
                     &:hover {
                         background-size: 105%;
 
@@ -414,11 +423,12 @@
                     background-position: center;
                     overflow: hidden;
                     margin-bottom: 40px;
-                    .main-container__global__big-cards__big-card__content__title{
+
+                    .main-container__global__big-cards__big-card__content__title {
                         margin-top: 20px;
                     }
-            
-                    .main-container__global__big-cards__big-card__content__link-to-author{
+
+                    .main-container__global__big-cards__big-card__content__link-to-author {
                         margin-top: 20px;
                     }
 
@@ -450,11 +460,9 @@
         &__grid {
             display: flex;
             position: relative;
-            margin-top: 10px;
             margin-bottom: 40px;
 
             &__grid-cards {
-                padding-top: 60px;
                 display: grid;
                 position: relative;
                 grid-template:
@@ -463,65 +471,76 @@
 
                 &__grid-card {
                     display: flex;
-                    justify-content: center;
-                    align-items: stretch;
                     flex-direction: column;
                     margin: 8px;
                     position: relative;
                     cursor: pointer;
                     border-radius: 16px;
-                    transition: all .2s linear;
-
-                    & a {
-                        text-decoration: none;
-                        text-decoration-line: none;
-                        color: beige;
-
+                    background-size: 100%;
+                    transition: background-size 0.4s ease-in;
+                    
+                    &:hover {
+                        transition: background-size 0.4s ease-in;
+                        background-size: 105%;
                     }
 
-                    &__article {
-                        font-size: 14px;
-                        font-family: Mulish, sans-serif;
-                        padding-left: 14px;
-                        padding-top: 10px;
-                        padding-bottom: 10px;
-                        color: beige;
-                        left: 0px;
-                    }
-
-                    &__pill-button {
+                    &__content {
+                        margin: 40px 26px 40px 26px;
                         display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        width: 70px;
-                        padding: 5px 10px;
-                        margin: 10px;
-                        font-family: Mulish, sans-serif;
-                        text-transform: uppercase;
-                        font-size: 8px;
-                        color: beige;
-                        border: grey solid 1px;
-                        letter-spacing: 2px;
-                        border-radius: 16px;
+                        flex-direction: column;
 
+                        & a {
+                            text-decoration: none;
+                            text-decoration-line: none;
+                            color: $title-color;
+
+                        }
+
+                        &__pill-buttons {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-content: flex-start;
+
+
+
+                            &__pill-button {
+                                margin-right: 5px;
+                                padding: 5px;
+                                justify-content: space-between;
+                                font-family: Mulish, sans-serif;
+                                text-transform: uppercase;
+                                font-size: 8px;
+                                color: $title-color;
+                                border: grey solid 1px;
+                                letter-spacing: 2px;
+                                border-radius: 16px;
+                            }
+                        }
+
+                        &__author {
+                            font-size: 14px;
+                            font-family: Mulish, sans-serif;
+                            color: $title-color;
+                            position: relative;
+                            align-self: flex-start;
+                        }
+
+                        &__article {
+                            font-size: 14px;
+                            font-family: Mulish, sans-serif;
+                            color: $title-color;
+                            position: relative;
+                        }
+
+                        &__title {
+                            font-family: Corben, serif;
+                            font-size: 24px;
+                            color: $title-color;
+                            position: relative;
+                            height: 90px;
+                        }
                     }
 
-                    &__author {
-                        font-size: 14px;
-                        font-family: Mulish, sans-serif;
-                        padding-left: 14px;
-                        color: beige;
-                    }
-
-                    &__title {
-                        font-family: Corben, serif;
-                        font-size: 16px;
-                        padding-left: 14px;
-                        color: beige;
-                        height: 40px;
-                        text-decoration: none;
-                        text-decoration-line: none;
-                    }
                 }
 
                 &__grid-card:nth-child(1) {
@@ -529,21 +548,33 @@
                     width: 463px;
                     height: 509px;
 
-                    background: linear-gradient(rgba(159, 8, 241, 0.5), rgba(159, 8, 241, 0.5)), url("../../img/grid_imgs/problems_grid_1.jpeg");
+                    background: linear-gradient(rgba(190, 136, 219, 0.844), rgba(178, 134, 202, 0.853)), url("../../img/grid_imgs/problems_grid_1.jpeg");
                     background-size: cover;
                     overflow: hidden;
 
-                    .main-container__pinned-section__wrap__pinned-element__content__link-to-author {
-                        padding-top: 150px;
+                    .main-container__global__grid__grid-cards__grid-card__content__pill-buttons__pill-button {
+                        color: rgb(51, 51, 51)
                     }
 
-                    .main-container__pinned-section__wrap__pinned-element__content__pinned-title {
-                        margin: 0;
+                    .main-container__global__grid__grid-cards__grid-card__content {
+                        margin: 100px 26px 40px 26px;
+                    }
+
+                    .main-container__global__grid__grid-cards__grid-card__content__author {
+                        padding-top: 20px;
+                    }
+
+                    .main-container__global__grid__grid-cards__grid-card__content__article {}
+
+                    .main-container__global__grid__grid-cards__grid-card__content__title {
+                        a {
+                            color: rgba(68, 67, 67);
+                        }
                     }
 
                     &:hover {
-                        transform: translateY(-4px);
-
+                        transition: background-size 0.4s ease-in;
+                        background-size: 105%;
                     }
                 }
 
@@ -557,19 +588,28 @@
                     position: relative;
                     overflow: hidden;
 
-                    .main-container__pinned-section__wrap__pinned-element__content__link-to-author {
-                        padding-top: 40px;
-                        color: rgb(229, 223, 223)
+                    .main-container__global__grid__grid-cards__grid-card__content__pill-buttons__pill-button {
+                        color: rgb(51, 51, 51)
                     }
 
-                    .main-container__pinned-section__wrap__pinned-element__content__pinned-title {
-                        padding-bottom: 40px;
-                        font-size: 19px;
-                        color: rgb(229, 223, 223)
+                    .main-container__global__grid__grid-cards__grid-card__content {
+                        margin: 100px 26px 40px 26px;
+                    }
+
+                    .main-container__global__grid__grid-cards__grid-card__content__author {
+                        margin-top: -40px;
+                    }
+
+                    .main-container__global__grid__grid-cards__grid-card__content__article {}
+
+                    .main-container__global__grid__grid-cards__grid-card__content__title {
+                        a {
+                            color: rgb(68, 67, 67);
+                        }
                     }
 
                     &:hover {
-                        transform: translateY(-4px);
+
                     }
                 }
 
@@ -581,19 +621,23 @@
                     background-size: cover;
                     overflow: hidden;
 
-                    .main-container__pinned-section__wrap__pinned-element__content__link-to-author {
-                        padding-top: 40px;
-                        color: rgb(68, 67, 67)
+                    .main-container__global__grid__grid-cards__grid-card__content__pill-buttons__pill-button {
+                        border: rgb(255, 255, 255) solid 1px;
                     }
 
-                    .main-container__pinned-section__wrap__pinned-element__content__pinned-title {
-                        padding-bottom: 40px;
-                        font-size: 19px;
-                        color: rgb(68, 67, 67)
+                    .main-container__global__grid__grid-cards__grid-card__content__author {
+                        margin-top: -30px;
+                    }
+
+                    .main-container__global__grid__grid-cards__grid-card__content__article {}
+
+                    .main-container__global__grid__grid-cards__grid-card__content__title {
+                        font-size: 16px;
+
                     }
 
                     &:hover {
-                        transform: translateY(-4px);
+
                     }
 
                 }
@@ -606,19 +650,26 @@
                     background-size: cover;
                     overflow: hidden;
 
-                    .main-container__pinned-section__wrap__pinned-element__content__link-to-author {
-                        padding-top: 40px;
-                        color: rgb(229, 223, 223)
+                    .main-container__global__grid__grid-cards__grid-card__content__pill-buttons__pill-button {
+                        color: rgb(51, 51, 51)
                     }
 
-                    .main-container__pinned-section__wrap__pinned-element__content__pinned-title {
-                        padding-bottom: 40px;
-                        font-size: 19px;
-                        color: rgb(229, 223, 223)
+                    .main-container__global__grid__grid-cards__grid-card__content__author {
+                        padding-top: 20px;
+                    }
+
+                    .main-container__global__grid__grid-cards__grid-card__content__article {}
+
+                    .main-container__global__grid__grid-cards__grid-card__content__title {
+                        font-size: 16px;
+
+                        a {
+                            color: rgb(68, 67, 67);
+                        }
                     }
 
                     &:hover {
-                        transform: translateY(-4px);
+
                     }
                 }
 
@@ -629,21 +680,21 @@
                     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/grid_imgs/change-is.jpeg");
                     background-size: cover;
                     overflow: hidden;
-
-                    .main-container__pinned-section__wrap__pinned-element__content__link-to-author {
-                        padding-top: 40px;
-                        margin: 0;
-                        color: rgb(68, 67, 67)
+                    .main-container__global__grid__grid-cards__grid-card__content__pill-buttons__pill-button {
+                        border: rgb(255, 255, 255) solid 1px;
+                    }
+                    .main-container__global__grid__grid-cards__grid-card__content__author {
+                        padding-top: 20px;
                     }
 
-                    .main-container__pinned-section__wrap__pinned-element__content__pinned-title {
-                        padding-bottom: 0px;
-                        font-size: 19px;
-                        color: rgb(68, 67, 67)
+                    .main-container__global__grid__grid-cards__grid-card__content__article {}
+
+                    .main-container__global__grid__grid-cards__grid-card__content__title {
+                        font-size: 16px;
                     }
 
                     &:hover {
-                        transform: translateY(-4px);
+
                     }
                 }
             }
