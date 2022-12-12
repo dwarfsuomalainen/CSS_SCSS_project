@@ -17,7 +17,6 @@
             width: 1203px;
             height: 35px;
 
-
             &__logo {
                 display: flex;
                 position: relative;
@@ -26,7 +25,6 @@
             }
 
             &__navbar {
-
                 ul {
                     overflow: hidden;
                     list-style: none;
@@ -73,8 +71,6 @@
                     fill: rgb(235, 235, 235);
                 }
             }
-
-
         }
     }
 
@@ -92,7 +88,6 @@
                 "a1 a2 a3"
                 "a1 a4 a5";
 
-
             &__pinned-element {
                 display: flex;
                 justify-content: center;
@@ -103,13 +98,28 @@
                 border-radius: 16px;
                 transition: all .2s linear;
 
-                h3 {line-height: 170%;}
+                h3 {
+                    line-height: 170%;
+                }
+
+                li {
+                    text-decoration: none;
+                    text-decoration-line: none;
+                }
 
                 &__content {
                     position: relative;
                     display: flex;
                     flex-direction: column;
                     width: 308px;
+
+                    & a {
+                        text-decoration: none;
+                        text-decoration-line: none;
+                        color: $title-color;
+
+                    }
+
 
                     &__pill-button {
                         margin-top: 20px;
@@ -131,6 +141,8 @@
                         font-family: Mulish, sans-serif;
                         padding-left: 14px;
                         color: $title-color;
+                        text-decoration: none;
+                        text-decoration-line: none;
                     }
 
                     &__pinned-title {
@@ -140,7 +152,6 @@
                         height: 40px;
 
                     }
-
                 }
             }
 
@@ -153,10 +164,12 @@
                 background-size: cover;
                 position: relative;
                 overflow: hidden;
-                .main-container__pinned-section__wrap__pinned-element__content__pill-button{
+
+                .main-container__pinned-section__wrap__pinned-element__content__pill-button {
                     background-color: $title-color;
                     margin-top: -130px;
                 }
+
                 .main-container__pinned-section__wrap__pinned-element__content__link-to-author {
                     padding-top: 150px;
                     margin: 0;
@@ -181,10 +194,11 @@
                 position: relative;
                 overflow: hidden;
 
-                .main-container__pinned-section__wrap__pinned-element__content__pill-button{
+                .main-container__pinned-section__wrap__pinned-element__content__pill-button {
                     background-color: $title-color;
                 }
-                .main-container__pinned-section__wrap__pinned-element__content{
+
+                .main-container__pinned-section__wrap__pinned-element__content {
 
                     padding-left: 10px;
                     margin-top: -40px;
@@ -217,26 +231,26 @@
                 position: relative;
                 overflow: hidden;
 
-                .main-container__pinned-section__wrap__pinned-element__content__pill-button{
-                    background-color: rgb(68, 67,67);
+                .main-container__pinned-section__wrap__pinned-element__content__pill-button {
+                    background-color: rgb(68, 67, 67);
                     color: $title-color;
                 }
 
-                .main-container__pinned-section__wrap__pinned-element__content{
+                .main-container__pinned-section__wrap__pinned-element__content {
 
                     padding-left: 10px;
                     margin-top: -40px;
                 }
 
                 .main-container__pinned-section__wrap__pinned-element__content__link-to-author {
-                    color: rgb(68, 67,67);
+                    color: rgb(68, 67, 67);
                     padding-top: 20px;
                 }
 
                 .main-container__pinned-section__wrap__pinned-element__content__pinned-title {
 
                     font-size: 19px;
-                    color: rgb(68,67,67) ;
+                    color: rgb(68, 67, 67);
                 }
 
                 &:hover {
@@ -254,11 +268,11 @@
                 position: relative;
                 overflow: hidden;
 
-                .main-container__pinned-section__wrap__pinned-element__content__pill-button{
+                .main-container__pinned-section__wrap__pinned-element__content__pill-button {
                     background-color: $title-color;
                 }
 
-                .main-container__pinned-section__wrap__pinned-element__content{
+                .main-container__pinned-section__wrap__pinned-element__content {
 
                     padding-left: 10px;
                     margin-top: -40px;
@@ -288,19 +302,20 @@
                 background-size: cover;
                 position: relative;
                 overflow: hidden;
-                .main-container__pinned-section__wrap__pinned-element__content__pill-button{
-                    background-color:rgb(68, 67,67);
+
+                .main-container__pinned-section__wrap__pinned-element__content__pill-button {
+                    background-color: rgb(68, 67, 67);
                     color: $title-color;
                 }
 
-                .main-container__pinned-section__wrap__pinned-element__content{
+                .main-container__pinned-section__wrap__pinned-element__content {
 
                     padding-left: 10px;
                     margin-top: -40px;
                 }
 
                 .main-container__pinned-section__wrap__pinned-element__content__link-to-author {
-                    color: rgb(68, 67,67);
+                    color: rgb(68, 67, 67);
                     padding-top: 20px;
                     margin-bottom: -20px;
                 }
@@ -308,7 +323,7 @@
                 .main-container__pinned-section__wrap__pinned-element__content__pinned-title {
 
                     font-size: 19px;
-                    color: rgb(68,67,67) ;
+                    color: rgb(68, 67, 67);
                 }
 
                 &:hover {
@@ -329,7 +344,6 @@
             &__big-card {
                 cursor: pointer;
                 border-radius: 16px;
-                transition: all .5s;
                 background-size: 100%;
                 -webkit-transition: all 0.3s ease-in-out;
 
@@ -752,6 +766,7 @@
                     .main-container__global__grid__grid-cards__grid-card__content__title {
                         font-size: 16px;
                     }
+
                     &:hover {
                         background-size: 105%;
                     }
@@ -817,9 +832,11 @@
                     50% {
                         width: 26ch
                     }
+
                     55% {
                         width: 26ch;
                     }
+
                     65% {
                         width: 26ch;
                     }

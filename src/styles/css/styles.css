@@ -202,11 +202,20 @@
 .main-container__pinned-section__wrap__pinned-element h3 {
   line-height: 170%;
 }
+.main-container__pinned-section__wrap__pinned-element li {
+  text-decoration: none;
+  text-decoration-line: none;
+}
 .main-container__pinned-section__wrap__pinned-element__content {
   position: relative;
   display: flex;
   flex-direction: column;
   width: 308px;
+}
+.main-container__pinned-section__wrap__pinned-element__content a {
+  text-decoration: none;
+  text-decoration-line: none;
+  color: rgb(235, 235, 235);
 }
 .main-container__pinned-section__wrap__pinned-element__content__pill-button {
   margin-top: 20px;
@@ -227,6 +236,8 @@
   font-family: Mulish, sans-serif;
   padding-left: 14px;
   color: rgb(235, 235, 235);
+  text-decoration: none;
+  text-decoration-line: none;
 }
 .main-container__pinned-section__wrap__pinned-element__content__pinned-title {
   font-family: Corben, serif;
@@ -379,7 +390,6 @@
 .main-container__global__big-cards__big-card {
   cursor: pointer;
   border-radius: 16px;
-  transition: all 0.5s;
   background-size: 100%;
   -webkit-transition: all 0.3s ease-in-out;
 }
