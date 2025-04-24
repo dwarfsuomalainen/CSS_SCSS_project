@@ -72,7 +72,7 @@ C:.
 ## Instructions
 Clone the repository 
 `git clone https://github.com/dwarfsuomalainen/fs13-CSS-SASS.git`<br>
-Project deployed on gh-pages (https://dwarfsuomalainen.github.io/fs13-CSS-SASS/)
+Project deployed on gh-pages (https://dwarfsuomalainen.github.io/CSS_SCSS_project/)
 
 
 
